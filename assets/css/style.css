@@ -99,12 +99,10 @@
   background: var(--04-bc-01, #04bc01);
   align-items: center;
   justify-content: center;
-  
+
   position: relative; /* Add position relative */
   z-index: 1; /* Ensure navbar is above background */
-
 }
-
 
 .navbar .btn {
   display: inline-flex;
@@ -112,60 +110,99 @@
   align-items: flex-end;
   gap: 10px;
   border-radius: 25px;
-  border: 1px solid #000;
+  border: 1px solid #04bc01;
   background: #fff;
   color: #000;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-transition: 0.5s;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.5s;
 }
-.navbar .btn:hover{
-    background: #64ff3d;
-    color: #fff;
+.navbar .btn:hover {
+  background: #abff7b;
+  color: #fff;
 }
 /* Active Button Style */
 .navbar .btn.active {
-    background-color:#fff; /* Change this to your desired active background color */
-    color:  #28a745; /* Change this to your desired active text color */
-    border-color: #28a745; /* Change this to match the active background color */
-  }
-.nav-items{
-    margin-left: 40px;
-    
+  background-color: #fff; /* Change this to your desired active background color */
+  color: #6ae13d; /* Change this to your desired active text color */
+  border-color: #6ae13d; /* Change this to match the active background color */
+}
+.nav-items {
+  margin-left: 40px;
 }
 
 /* Hero Section----------------- */
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-  }
-  
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/hero-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1; /* Ensure it stays behind content */
-    transform: translateY(-45px); /* Move image up by half of its height */
-  }
-  
-  .container {
-    position: relative;
-    z-index: 1; /* Ensure container content is above the background */
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure it stays behind content */
+  transform: translateY(-45px); /* Move image up by half of its height */
+}
+
+.container {
+  position: relative;
+  z-index: 1; /* Ensure container content is above the background */
+}
+
+/* Hero Header----------------- */
+.hero-header {
+  margin-top: 200px;
+  height: 58px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.92px;
+}
+.hero-info{
+    margin-top: 160px;
+    display: flex;
+}
+.hero-box {
+  display: flex;
+  width: 302px;
+  height: 102px;
+  padding: 15px 37px 37px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  background: var(--main-color, #05ba09);
+margin-right: 80px;
+}
+.hero .hero-box:hover{
+    background: #ABFF7B;
+}
+.hero-box p{
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
