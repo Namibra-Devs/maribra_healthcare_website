@@ -1,0 +1,50 @@
+/* Header Section */
+.header {
+    background: #000;
+    padding: 10px 0;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contacts {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .contact-text p {
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+  .contact-icon {
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+  
+  .vertical-separator {
+    border-left: 1px solid #fff;
+    height: 30px; /* Adjust height as needed */
+    margin: 0 10px;
+  }
+  
+  .contacts:last-child {
+    margin-left: 0; /* Moves the last contact to the right */
+  }
+  
