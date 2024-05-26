@@ -117,11 +117,18 @@ font-size: 12px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+transition: 0.5s;
 }
 .navbar .btn:hover{
     background: #64ff3d;
     color: #fff;
 }
+/* Active Button Style */
+.navbar .btn.active {
+    background-color:#fff; /* Change this to your desired active background color */
+    color:  #28a745; /* Change this to your desired active text color */
+    border-color: #28a745; /* Change this to match the active background color */
+  }
 .nav-items{
     margin-left: 40px;
     
