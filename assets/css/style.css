@@ -1,36 +1,38 @@
 /* Header Section */
 .header {
     background: #000;
-    padding: 10px 0;
+    padding: 10px;
   }
   
   .contact-section {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    width: 100%;
+    width: 96%;
   }
   
   .contacts {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
+    
   }
   
   .contact-text p {
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.1rem;
   }
   
   .social-links {
     display: flex;
     align-items: center;
+    width: 10;
   }
   
   .social-links img {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
   }
   
   .contact-icon {
@@ -40,7 +42,7 @@
   
   .vertical-separator {
     border-left: 1px solid #fff;
-    height: 30px; /* Adjust height as needed */
+    height: 25px; /* Adjust height as needed */
     margin: 0 10px;
   }
   
@@ -48,3 +50,47 @@
     margin-left: 0; /* Moves the last contact to the right */
   }
   
+  /* Logo Section----------- */
+  .logo{
+    margin-left: 45%;
+    padding: 20px 0px;
+  }
+  .logo-book{
+    margin-left: 140px;
+    
+ }
+ .logo-text{
+    margin-left: 10px;
+    width: 201px;
+height: 38px;
+color: #000;
+
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.48px;
+ }
+ .logo .btn{
+    display: flex;
+padding: 10px 22px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 1px solid var(--STROKE-COLOR, #6AE13D);
+background: var(--04-bc-01, #04BC01);
+color: #FFF;
+
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+ .logo .btn:hover{
+    background:  #6AE13D;
+    
+ }
+
