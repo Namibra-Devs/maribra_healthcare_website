@@ -211,7 +211,14 @@
 /* About Us Section--------------------------- */
 .about-us{
     margin-top: 50px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.about-images {
+    display: flex;
+    align-items: flex-start; /* Align images to the top */
+  }
 
 .left-column {
   flex: 1; /* Take up remaining space */
@@ -265,3 +272,49 @@
     width: 347px;
     height: 522px;
 }
+.about-text {
+    flex: 1; /* Allow text to take remaining space */
+    margin-left: 60px;
+    margin-top: 22px;
+  }
+  .title h4{
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  .title h3{
+    color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .about-text p{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    
+  }
+  .about-qty {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .about-us-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Add space between icon and text */
+  }
+  
+  .btn {
+    margin-top: 20px; /* Add space above the button */
+  }
