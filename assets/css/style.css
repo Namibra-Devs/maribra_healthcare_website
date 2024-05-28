@@ -326,3 +326,48 @@ line-height: normal;
 .btn {
   margin-top: 20px; /* Add space above the button */
 }
+
+/* Our Service Section--------------- */
+.center-title{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.center-title h2{
+  color: #000;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.custom-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 31;
+  bottom: -25px; /* Adjust the position as needed */
+  width: calc(47% - 0px); /* Adjust width to leave space for the squared end */
+  height: 3px; /* Thickness of the underline */
+  background-color: #04BC01; /* Color of the underline */
+}
+
+.custom-underline::before {
+  content: '';
+  position: absolute;
+  left: 116;
+  bottom: -31px; /* Match this with the `bottom` value of ::after */
+  width: 17px; /* Length of the squared end */
+  height: 17px; /* Match this with the height of ::after */
+  transform: rotate(36deg); /* Rotate to create the diamond shape */
+  background-color: #04BC01; /* Match this with the background-color of ::after */
+}
