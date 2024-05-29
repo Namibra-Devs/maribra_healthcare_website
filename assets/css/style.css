@@ -335,6 +335,7 @@ line-height: normal;
     flex-direction: column;
     text-align: center;
     width: 100%;
+    margin-top: 50px;
 }
 .center-title h2{
   color: #000;
@@ -355,7 +356,7 @@ line-height: normal;
   content: '';
   position: absolute;
   left: 31;
-  bottom: -25px; /* Adjust the position as needed */
+  bottom: -17px; /* Adjust the position as needed */
   width: calc(47% - 0px); /* Adjust width to leave space for the squared end */
   height: 3px; /* Thickness of the underline */
   background-color: #04BC01; /* Color of the underline */
@@ -365,9 +366,69 @@ line-height: normal;
   content: '';
   position: absolute;
   left: 116;
-  bottom: -31px; /* Match this with the `bottom` value of ::after */
+  bottom: -23px; /* Match this with the `bottom` value of ::after */
   width: 17px; /* Length of the squared end */
   height: 17px; /* Match this with the height of ::after */
   transform: rotate(36deg); /* Rotate to create the diamond shape */
   background-color: #04BC01; /* Match this with the background-color of ::after */
+}
+/* Slider------------------ */
+.box {
+ 
+  padding: 10px;
+  text-align: center;
+ 
+  width: 38%; /* Adjust width to ensure both boxes fit within the container */
+  margin-left: 84px;
+}
+.slider{
+  margin-top: 70px;
+}
+
+.text-above p {
+  margin: 0;
+  padding: 20px 0px;
+}
+
+.image-above p {
+  margin: 0;
+  padding: 20px 0px;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.box-title{
+  color: #000; /* Text color */
+    position: relative;
+    display: inline-block; /* Ensures the underline spans the text width */
+    margin-top: 10px;
+}
+.box-title::after {
+  content: '';
+  position: absolute;
+  left: 57px;
+  bottom: -5px; /* Adjust as needed to place the underline close to the text */
+  width: 40%;
+  height: 3px; /* Thickness of the underline */
+  background-color: #04BC01; /* Underline color */
+}
+
+/* Custom styles for carousel indicators */
+.carousel-indicators button {
+  width: 20px;
+  height: 2px;
+ 
+  background-color: #000; /* Default color */
+  border: none; /* Remove default border */
+}
+
+.carousel-indicators .active {
+  background-color: #04BC01; /* Active color */
+  width: 40px; /* Increased size */
+  height: 2opx; /* Increased size */
 }
