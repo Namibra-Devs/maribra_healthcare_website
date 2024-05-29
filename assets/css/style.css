@@ -372,7 +372,7 @@
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 /* Slider------------------ */
-.box {
+ .box {
   padding: 10px;
   text-align: center;
 
@@ -467,7 +467,7 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
+} 
 
 /* Our Team Section----------------- */
 .team {
@@ -513,3 +513,47 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+/* Our Products Section------------------------------- */
+.proucts {
+  padding: 20px 0;
+  
+}
+.product-card {
+  overflow: hidden;
+  text-align: center;
+  width: 250px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+  margin-top: 60px;
+}
+
+.product-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--04-bc-01, #04bc01);
+  padding: 10px;
+}
+
+.product-text {
+  padding: 4px 8px;
+  border: 1px solid var(--04-bc-01, #04bc01);
+    margin-top: 7px;
+    text-align: left;
+}
+
+.product-title {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.product-text p{
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
