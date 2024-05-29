@@ -423,8 +423,7 @@ img {
   width: 20px;
   height: 2px;
  
-  background-color: #000; /* Default color */
-  border: none; /* Remove default border */
+  
 }
 
 .carousel-indicators .active {
@@ -432,3 +431,46 @@ img {
   width: 40px; /* Increased size */
   height: 2opx; /* Increased size */
 }
+
+ /* Custom styles for carousel control buttons */
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     background-color: #04BC01; /* Your desired color */
+     border-radius: 50%; /* Optional: make them circular */
+     width: 3rem; /* Adjust size if needed */
+     height: 3rem; /* Adjust size if needed */
+ }
+
+
+ .carousel-control-prev:hover .carousel-control-prev-icon,
+ .carousel-control-next:hover .carousel-control-next-icon {
+     background-color: #028A00; /* Darker shade for hover effect */
+ }
+
+ .carousel-control-prev-icon::after,
+ .carousel-control-next-icon::after {
+     display: none; /* Remove the default arrow icon */
+ }
+
+ /* Custom arrow icons using pseudo-elements */
+ .carousel-control-prev-icon::before {
+     content: '';
+     color: white;
+     font-size: 2rem; /* Adjust font size */
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .carousel-control-next-icon::before {
+     content: '';
+     color: white;
+     font-size: 2rem; /* Adjust font size */
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ 
