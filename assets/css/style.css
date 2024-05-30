@@ -677,3 +677,25 @@ letter-spacing: 0.8px;
   background: #abff7b;
   color: #000;
 }
+
+/* Buttons---------------------------- */
+.book-navs {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookings-navs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-nav{
+  background: #fff;
+  border-color: #04bc01;
+  color: #000;
+}
+
+
+/* Footer Section------------------------------ */
