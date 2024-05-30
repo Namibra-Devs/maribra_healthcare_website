@@ -671,6 +671,7 @@ letter-spacing: 0.8px;
   line-height: normal;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -684,6 +685,7 @@ letter-spacing: 0.8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .bookings-navs {
