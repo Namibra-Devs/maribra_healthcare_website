@@ -312,6 +312,10 @@
   font-weight: 600;
   line-height: normal;
 }
+.about-text .btn:hover{
+  background: #abff7b;
+  color: #000;
+}
 .about-qty {
   display: flex;
   align-items: center;
@@ -557,3 +561,27 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.our-products .btn{
+  display: inline-flex;
+padding: 10px 22px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 1px solid var(--STROKE-COLOR, #6AE13D);
+background: var(--04-bc-01, #04BC01);
+color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+width: 135px;
+margin-left: 50%;
+transition: 0.3s;
+}
+.our-products .btn:hover{
+  background: #abff7b;
+  color: #000;
+}
