@@ -585,3 +585,95 @@ transition: 0.3s;
   background: #abff7b;
   color: #000;
 }
+
+/* Blogs--------------------------- */
+.blog-card {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  
+  margin: 50px auto;
+}
+
+.blog-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.blog-image img {
+  /* max-width: 100%; */
+  width: 436px;
+  height: 248px;
+}
+
+.blog-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+margin: 20px 0px;
+
+}
+
+.blog-content {
+ 
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+  
+}
+
+.blog-info {
+  display: flex;
+  align-items: center;
+  gap: 132px;
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+
+.blog-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-info .date {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.date-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.btn {
+  background-color: #04bc01;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #abff7b;
+  color: #000;
+}
