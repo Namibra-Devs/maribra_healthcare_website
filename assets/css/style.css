@@ -1,3 +1,8 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
 /* Header Section */
 .header {
   background: #000;
@@ -31,7 +36,7 @@
 .social-links img {
   width: 17px;
   height: 17px;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 .contact-icon {
@@ -321,10 +326,22 @@
   align-items: center;
 }
 
-.about-us-icon img {
+.about-bullets{
+  justify-content: center;
+  justify-items: center;
+}
+.about-bullets img {
   width: 24px;
   height: 24px;
   margin-right: 10px; /* Add space between icon and text */
+}
+.about-bullets p{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .btn {
@@ -375,6 +392,31 @@
   transform: rotate(36deg); /* Rotate to create the diamond shape */
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
+/* Our Team Title */
+.team-title{
+display: inline-block;
+position: relative;
+}
+.team-title::after {
+  content: "";
+  position: absolute;
+  left: 31;
+  bottom: -17px; /* Adjust the position as needed */
+  width: calc(47% - 0px); /* Adjust width to leave space for the squared end */
+  height: 3px; /* Thickness of the underline */
+  background-color: #04bc01; /* Color of the underline */
+}
+.team-title::before{
+  content: "";
+  position: absolute;
+  left: 97px;
+  bottom: -23px; /* Match this with the `bottom` value of ::after */
+  width: 17px; /* Length of the squared end */
+  height: 17px; /* Match this with the height of ::after */
+  transform: rotate(36deg); /* Rotate to create the diamond shape */
+  background-color: #04bc01; /* Match this with the background-color of ::after */ 
+}
+
 /* Slider------------------ */
 .box {
   padding: 10px;
@@ -424,10 +466,11 @@ img {
   width: 20px;
   height: 3px;
   border-radius: 25px;
+  
 }
 
 .carousel-indicators .active {
-  background-color: #04bc01; /* Active color */
+  background-color: white; /* Active color */
   width: 40px; /* Increased size */
   height: 3px; /* Increased size */
   border-radius: 25px;
@@ -436,7 +479,7 @@ img {
 /* Custom styles for carousel control buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #04bc01; /* Your desired color */
+  background-color: white; /* Your desired color */
   border-radius: 50%; /* Optional: make them circular */
   width: 3rem; /* Adjust size if needed */
   height: 3rem; /* Adjust size if needed */
@@ -454,8 +497,8 @@ img {
 
 /* Custom arrow icons using pseudo-elements */
 .carousel-control-prev-icon::before {
-  content: "";
-  color: white;
+  content: "<";
+  color: #04bc01;
   font-size: 2rem; /* Adjust font size */
   position: absolute;
   left: 50%;
@@ -464,8 +507,8 @@ img {
 }
 
 .carousel-control-next-icon::before {
-  content: "";
-  color: white;
+  content: ">";
+  color: #04bc01;
   font-size: 2rem; /* Adjust font size */
   position: absolute;
   left: 50%;
