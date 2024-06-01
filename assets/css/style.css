@@ -312,7 +312,7 @@
   font-weight: 600;
   line-height: normal;
 }
-.about-text .btn:hover{
+.about-text .btn:hover {
   background: #abff7b;
   color: #000;
 }
@@ -376,7 +376,7 @@
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 /* Slider------------------ */
- .box {
+.box {
   padding: 10px;
   text-align: center;
 
@@ -471,12 +471,11 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-} 
+}
 
 /* Our Team Section----------------- */
 .team {
   padding: 20px 0;
-  
 }
 .team-card {
   overflow: hidden;
@@ -509,19 +508,18 @@ img {
   font-weight: 600;
   line-height: normal;
 }
-.card-text p{
+.card-text p {
   color: #000;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /* Our Products Section------------------------------- */
 .proucts {
   padding: 20px 0;
-  
 }
 .product-card {
   overflow: hidden;
@@ -542,8 +540,8 @@ line-height: normal;
 .product-text {
   padding: 4px 8px;
   border: 1px solid var(--04-bc-01, #04bc01);
-    margin-top: 7px;
-    text-align: left;
+  margin-top: 7px;
+  text-align: left;
 }
 
 .product-title {
@@ -554,7 +552,7 @@ line-height: normal;
   font-weight: 600;
   line-height: normal;
 }
-.product-text p{
+.product-text p {
   color: #000;
   font-family: Inter;
   font-size: 14px;
@@ -562,26 +560,26 @@ line-height: normal;
   font-weight: 500;
   line-height: normal;
 }
-.our-products .btn{
+.our-products .btn {
   display: inline-flex;
-padding: 10px 22px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 25px;
-border: 1px solid var(--STROKE-COLOR, #6AE13D);
-background: var(--04-bc-01, #04BC01);
-color: #FFF;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-width: 135px;
-margin-left: 50%;
-transition: 0.3s;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  border: 1px solid var(--STROKE-COLOR, #6ae13d);
+  background: var(--04-bc-01, #04bc01);
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 135px;
+  margin-left: 50%;
+  transition: 0.3s;
 }
-.our-products .btn:hover{
+.our-products .btn:hover {
   background: #abff7b;
   color: #000;
 }
@@ -593,7 +591,7 @@ transition: 0.3s;
   border-radius: 10px;
   padding: 20px;
   align-items: center;
-  
+
   margin: 50px auto;
 }
 
@@ -613,20 +611,17 @@ transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-margin: 20px 0px;
-
+  margin: 20px 0px;
 }
 
 .blog-content {
- 
   color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.8px;
-  
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
 }
 
 .blog-info {
@@ -634,12 +629,12 @@ letter-spacing: 0.8px;
   align-items: center;
   gap: 132px;
   color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.8px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
 }
 
 .blog-info span {
@@ -663,7 +658,7 @@ letter-spacing: 0.8px;
 
 .btn {
   background-color: #04bc01;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
@@ -681,7 +676,6 @@ letter-spacing: 0.8px;
 
 /* Buttons---------------------------- */
 .book-navs {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -693,11 +687,152 @@ letter-spacing: 0.8px;
   justify-content: center;
   align-items: center;
 }
-.contact-nav{
+.contact-nav {
   background: #fff;
   border-color: #04bc01;
   color: #000;
 }
 
-
 /* Footer Section------------------------------ */
+.footer {
+  width: 100%;
+  background-color: #04bc01;
+  padding-top: 40px;
+  color: white;
+  margin-top: 70px;
+}
+.footer-top {
+  margin-top: 30px;
+  display: flex;
+}
+
+.footer-top > div {
+  padding: 10px;
+}
+.info {
+  flex: 2;
+}
+.navs,
+.hours,
+.contact {
+  flex: 1;
+}
+.icon {
+  margin-bottom: 30px;
+}
+.icon img {
+  margin-right: 10px;
+}
+.icon-text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+
+  letter-spacing: 0.96px;
+  margin-left: 20px;
+}
+.info-content {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+
+  letter-spacing: 0.32px;
+}
+.icon-left {
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social a {
+  margin-right: 30px;
+}
+.navs {
+  flex: 0.5;
+}
+.navs-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.navs-lists {
+  list-style-type: none;
+
+  margin: 60px 0px;
+}
+.navs-lists a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+
+  text-decoration: none;
+  margin-top: 20px;
+}
+.hours-lists{
+  margin-top: 60px;
+}
+.hours-lists li {
+  margin-top: 5px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 20px;
+}
+.contact p{
+  color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+
+}
+.contact-info{
+ margin-top: 50px;
+}
+.icon-left {
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social a {
+  margin-right: 10px;
+}
+.footer-down {
+  display: flex;
+}
+.footer-down .copy {
+  background-color: black;
+  color: white;
+  flex: 1;
+  padding: 20px;
+}
+.footer-down .sign-up {
+  background-color: white;
+  color: black;
+  flex: 1;
+  padding: 20px;
+}
+.email {
+  display: flex;
+}
+.email input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+}
+.email button {
+  padding: 10px;
+}
