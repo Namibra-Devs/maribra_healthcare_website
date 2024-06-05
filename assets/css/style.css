@@ -972,6 +972,18 @@ img {
   letter-spacing: 1.92px;
 }
 
+.about-text h4{
+  color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-bottom: 15px;
+}
+.accordion-button {
+  font-size: 25px; /* Adjust the font size as needed */
+}
 .about-box-bg{
   position: absolute;
   /* top: 10%; */
@@ -1019,3 +1031,4 @@ margin-bottom: 20px;
   font-style: normal;
   font-weight: 500
 }
+
