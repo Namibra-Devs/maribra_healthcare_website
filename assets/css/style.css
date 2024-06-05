@@ -1,4 +1,4 @@
-body{
+body {
   padding: 0;
   margin: 0;
 }
@@ -143,13 +143,16 @@ body{
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+   height: 100vh; /Full viewport height */
+  
 }
 
 .hero {
   position: relative;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.22);
+  
 }
 
 .hero-bg {
@@ -157,7 +160,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 107%;
   background-image: url("../images/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -326,7 +329,6 @@ body{
   align-items: center;
 }
 
-
 .btn {
   margin-top: 20px; /* Add space above the button */
 }
@@ -376,9 +378,9 @@ body{
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 /* Our Team Title */
-.team-title{
-display: inline-block;
-position: relative;
+.team-title {
+  display: inline-block;
+  position: relative;
 }
 .team-title::after {
   content: "";
@@ -389,7 +391,7 @@ position: relative;
   height: 3px; /* Thickness of the underline */
   background-color: #04bc01; /* Color of the underline */
 }
-.team-title::before{
+.team-title::before {
   content: "";
   position: absolute;
   left: 97px;
@@ -397,7 +399,7 @@ position: relative;
   width: 17px; /* Length of the squared end */
   height: 17px; /* Match this with the height of ::after */
   transform: rotate(36deg); /* Rotate to create the diamond shape */
-  background-color: #04bc01; /* Match this with the background-color of ::after */ 
+  background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 
 /* Slider------------------ */
@@ -449,7 +451,6 @@ img {
   width: 20px;
   height: 3px;
   border-radius: 25px;
-  
 }
 
 .carousel-indicators .active {
@@ -803,10 +804,10 @@ img {
   text-decoration: none;
   margin-top: 20px;
 }
-.navs-lists a:hover{
+.navs-lists a:hover {
   text-decoration: underline;
 }
-.hours-lists{
+.hours-lists {
   margin-top: 60px;
 }
 .hours-lists li {
@@ -818,16 +819,15 @@ img {
   font-weight: 400;
   gap: 20px;
 }
-.contact p{
-  color: #FFF;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-
+.contact p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
 }
-.contact-info{
- margin-top: 50px;
+.contact-info {
+  margin-top: 50px;
 }
 .icon-left {
   display: flex;
@@ -851,7 +851,7 @@ font-weight: 400;
   background-color: black;
   color: white;
   flex: 1;
- align-content: center;
+  align-content: center;
   box-sizing: border-box;
   border-right: 70px solid #fff;
   border-bottom: 100px solid transparent;
@@ -859,10 +859,9 @@ font-weight: 400;
 .copy {
   /* text-align: center; */
   width: 100%; /* Optional: ensure it takes full width */
-  
 }
-.copy p{
-  color: #FFF;
+.copy p {
+  color: #fff;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -886,18 +885,18 @@ font-weight: 400;
   gap: 10px;
   width: 100%; /* Ensure it takes full width */
   justify-content: center;
-  padding: 0px 80px;
+  padding: 0px 60px;
 }
 .sign-up p {
   margin: 0;
   flex: 1; /* Make the text take up available space */
   color: #000;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.6px;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
 }
 .email {
   display: flex;
@@ -906,34 +905,32 @@ letter-spacing: 0.6px;
   border: 1px solid #000;
   overflow: hidden;
   flex: 1; /* Adjust the flex value to allocate space */
-  
-  
 }
-.email input[type="email"], .email button {
+.email input[type="email"],
+.email button {
   height: 100%;
   padding: 10px;
   border: none;
   outline: none;
-  
 }
 .email input[type="email"] {
   flex: 1;
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   color: #000;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.6px;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
 }
 .email button {
   background-color: #05ba09;
   display: flex;
-width: 114px;
-padding: 10px;
-justify-content: center;
-align-items: center;
+  width: 114px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   cursor: pointer;
   box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -942,4 +939,83 @@ align-items: center;
 .email button:hover {
   background-color: #abff7b;
   color: #000;
+}
+
+/* About Us PAge---------------------------------------- */
+.about-home{
+  background: rgba(0, 0, 0, 0.46);
+}
+.about-bg {
+  position: absolute;
+  /* top: 10%; */
+  left: 0;
+  width: 100%;
+  height: 97%;
+  background-image: url("../images/about-us-home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure it stays behind content */
+  transform: translateY(-45px);
+}
+
+.about-header {
+  align-items: center;
+  margin-top: 40%;
+  margin-left: 40%;
+  color: #fff;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.92px;
+}
+
+.about-box-bg{
+  position: absolute;
+  /* top: 10%; */
+  left: 0;
+  width: 100%;
+  height: 436px;
+  background-image: url("../images/about-us-home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure it stays behind content */
+ 
+}
+.about-info{
+  width: 100%;
+height: 436px;
+/* flex-shrink: 0; */
+background: rgba(0, 0, 0, 0.46);
+margin-top: 60px;
+margin-bottom: 20px;
+
+}
+.info-box{
+  border: solid 5px #fff;
+  padding: 23px 26px;
+  width: 300px;
+  align-items: center;
+  margin-top: 150px;
+  margin-right: 65px;
+}
+.info-box span{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+   margin-left: 45%;
+}
+.info-box p{
+   color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500
 }
