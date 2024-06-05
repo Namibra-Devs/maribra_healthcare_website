@@ -1053,9 +1053,55 @@ margin-bottom: 20px;
   padding: 23px 26px;
   width: 300px;
   align-items: center;
-  margin-top: 400px;
-  margin-right: 65px;
+  margin-top: 70px;
+  margin-left: 65px;
+}
+.service-box p{
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .service-text{
-  margin-top: 80px;
+  margin-top: 200px;
+}
+.service-text h4{
+  color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.4px;
+}
+.service-text p{
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+/* Services Info Section-------------------- */
+
+.nav-pills .nav-link {
+  background: #6AE13D;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.2em; /* Increase font size */
+  margin-bottom: 1.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background: #4CAF50; /* Slightly different shade for active state */
+}
+
+.tab-pane {
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
