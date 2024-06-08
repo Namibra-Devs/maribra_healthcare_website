@@ -363,6 +363,7 @@ body, html {
 .services-wrapper {
   position: relative;
   z-index: 1;
+ 
 }
 
 .center-title {
@@ -448,7 +449,7 @@ body, html {
   padding: 10px;
   text-align: center;
 
-  width: 38%; /* Adjust width to ensure both boxes fit within the container */
+  width: 38%; 
   margin-left: 84px;
 }
 .slider {
@@ -472,74 +473,23 @@ img {
   margin: 0 auto;
 }
 .box-title {
-  color: #000; /* Text color */
+  color: #000; 
   position: relative;
-  display: inline-block; /* Ensures the underline spans the text width */
+  display: inline-block; 
   margin-top: 10px;
 }
 .box-title::after {
   content: "";
   position: absolute;
   left: 57px;
-  bottom: -5px; /* Adjust as needed to place the underline close to the text */
+  bottom: -5px;
   width: 40%;
-  height: 3px; /* Thickness of the underline */
-  background-color: #04bc01; /* Underline color */
+  height: 3px; /
+  background-color: #04bc01; 
 }
 
 /* Custom styles for carousel indicators */
-.carousel-indicators button {
-  width: 20px;
-  height: 3px;
-  border-radius: 25px;
-}
 
-.carousel-indicators .active {
-  background-color: white; /* Active color */
-  width: 40px; /* Increased size */
-  height: 3px; /* Increased size */
-  border-radius: 25px;
-}
-
-/* Custom styles for carousel control buttons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: white; /* Your desired color */
-  border-radius: 50%; /* Optional: make them circular */
-  width: 3rem; /* Adjust size if needed */
-  height: 3rem; /* Adjust size if needed */
-}
-
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #028a00; /* Darker shade for hover effect */
-}
-
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-  display: none; /* Remove the default arrow icon */
-}
-
-/* Custom arrow icons using pseudo-elements */
-.carousel-control-prev-icon::before {
-  content: "<";
-  color: #04bc01;
-  font-size: 2rem; /* Adjust font size */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.carousel-control-next-icon::before {
-  content: ">";
-  color: #04bc01;
-  font-size: 2rem; /* Adjust font size */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* Our Team Section----------------- */
 .team {
@@ -1101,6 +1051,12 @@ margin-bottom: 20px;
   align-items: center;
   margin-top: 70px;
   margin-left: 65px;
+  margin-bottom: 80px;
+ 
+}
+.our_service{
+  background-color: transparent;
+  overflow: visible;
 }
 .service-box p{
   color: #000;
@@ -1150,6 +1106,7 @@ letter-spacing: 1.2px;
   padding: 20px;
   background: #f9f9f9;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
 }
 
 /* Blogs Section----------------- */
@@ -1168,4 +1125,194 @@ letter-spacing: 1.2px;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
+}
+
+/* Featured Service Backround Image-------- */
+.featured-service-bg{
+  position: absolute;
+  margin-top: 5%;
+  left: 100;
+  width: 100%;
+  height: 100%;
+  background: url('../images/right~2.png') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 20.5; /* Adjust the opacity to your preference */
+}
+
+/* Blogs Page----------------------- */
+.blogs-items {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Ensure both divs have the same height */
+.blogs-card, .blog-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  flex: 1; /* Adjusts to the same height */
+  margin: 10px; /* Optional: Add some margin */
+}
+
+.blogs-card {
+  border: 1px solid #04BC01;
+  display: flex; /* Added */
+    flex-direction: column; /* Added */
+}
+
+/* Additional styling */
+.blogs-image img {
+  width: 100%;
+  height: 433px;
+  margin-top: 20px;
+ 
+}
+
+.blogs-text{
+margin-top: 5px;
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+
+}
+.search{
+  border-radius: 25px;
+  border: 1px solid #04BC01;
+  display: flex;
+width: 176px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+
+.blogs-info {
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogs-info span {
+  display: flex;
+  align-items: center;
+}
+
+.blogs-info .date img {
+  margin-right: 10px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.recent {
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.news-title {
+ margin-top: px;
+  color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+}
+.news-title h6{
+  color: #04BC01;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+text-decoration-line: underline;
+}
+
+/* background------------------ */
+.blogs-bg{
+  position: absolute;
+  margin-top: 5%;
+  /* left: 100; */
+  width: 100%;
+  height: 180%;
+  background: url('../images/right~2.png') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 20.5; /* Adjust the opacity to your preference */
+}
+.second-card {
+  width: 43%;
+  margin-left: 105px;
+  box-sizing: border-box;
+   
+}
+
+/* Slider----------------------------- */
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
 }
