@@ -1455,3 +1455,20 @@ input, textarea {
 .carousel-control-next {
   right: 10px;
 }
+
+
+/* Appointment Page--------------------------------------------------- */
+.radio-container {
+  display: flex;
+  gap: 20px; /* Space between radio button groups */
+}
+.radio-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000; /* Border around the radio button and label */
+  padding: 10px;
+  border-radius: 5px;
+}
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
