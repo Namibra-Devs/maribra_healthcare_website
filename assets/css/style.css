@@ -89,12 +89,15 @@ body, html {
   border: 1px solid var(--STROKE-COLOR, #6ae13d);
   background: var(--04-bc-01, #04bc01);
   color: #fff;
-
+text-decoration: none;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.logo-book a{
+  text-decoration: none;
 }
 .logo .btn:hover {
   background: #6ae13d;
@@ -309,6 +312,9 @@ body, html {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.8px;
+}
+.about-text a{
+  text-decoration: none;
 }
 .about-text .btn {
   display: flex;
