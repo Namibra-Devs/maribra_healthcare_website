@@ -1458,17 +1458,239 @@ input, textarea {
 
 
 /* Appointment Page--------------------------------------------------- */
+.appointments {
+  padding: 20px;
+}
+.appointment {
+  display: flex;
+  gap: 20px; /* Space between the profile and details cards */
+}
+.profile-card {
+  background-color: white;
+  padding: 20px;
+ 
+  flex: 1.5; /* Make this div take up less space than the details card */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  
+}
+.details-card {
+  background-color: #F1F1F0;
+  padding: 20px;
+  flex: 2; /* Make this div take up more space than the profile card */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  
+}
+.logo-name{
+  display: inline-flex;
+align-items: center;
+gap: 23.859px;
+margin-bottom: 40px;
+margin-left: 60px;
+}
+.profile-title{
+  color: #000;
+font-family: Inter;
+font-size: 23.509px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.94px;
+}
+.profile-text{
+  margin-top: 50px;
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.profile-image img {
+  width: 588.252px;
+height: 477.805px;
+  border-radius: 20px; 
+}
+.details-title h4{
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+margin-bottom: 30px;
+}
+.radios {
+  display: flex;
+  flex-direction: column; /* Align radio button groups vertically */
+  align-items: space-between; /* Align radio button groups to the left */
+  gap: 20px; /* Space between radio button groups */
+  margin-bottom: 20px; /* Space below the radio buttons */
+}
 .radio-container {
   display: flex;
   gap: 20px; /* Space between radio button groups */
+  margin-bottom: 20px; /* Space below the radio buttons */
 }
 .radio-group {
   display: flex;
-  align-items: center;
-  border: 2px solid #000; /* Border around the radio button and label */
-  padding: 10px;
+ 
+  border: 1px solid #000; /* Border around the radio button and label */
+  padding: 5px;
   border-radius: 5px;
+ 
+ width: 299px;
+ height: 40px;
+
+}
+.meet-label{
+  margin-left: 20px;
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.call-label{
+  margin-left: 20px;
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
 }
 .radio-group input[type="radio"] {
-  margin-right: 10px;
+  margin-left: 10px;
+   transform: scale(1.5);  
+   margin-top: 8px;
+   background: #04BC01;
+stroke-width: 2px;
+stroke: #04BC01;
+}
+
+.full-name label {
+  margin-bottom: 10px;
+  display: block;
+  color: #000; /* Ensure the labels are readable on the dark background */
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.full-name input{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  padding: 10px;
+}
+
+.mobile label{
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: block;
+  color: #000; /* Ensure the labels are readable on the dark background */
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.mobile input{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  padding: 10px;
+  width: 45%;
+}
+.date-time label{
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: block;
+  color: #000; /* Ensure the labels are readable on the dark background */
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+
+.date-time input{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  padding: 10px;
+  width: 140%;
+  
+}
+
+.time{
+  margin-left: 170px;
+}
+.details-title h4 {
+  color: #000;
+}
+.select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.select h4{
+  
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+
+.appointment-btn{
+  border: 1px solid;
+  border-radius: 8px;
+  background: #04BC01;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.5px;
+  padding: 10px 200px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.get-appointed a{
+ width: 100%;
+}
+.get-appointed a:hover{
+  background: #6ae13d;
+color: #000;
 }
