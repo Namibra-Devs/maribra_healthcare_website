@@ -80,7 +80,8 @@
               <div class="logo-text">MARIBRA HEALTHCARE LIMITED.</div>
             </div>
             <div class="logo-book">
-              <button class="btn" type="button">Book Appointment</button>
+              <a href="appointment.html"><button class="btn" type="button">Book Appointment</button></a>
+              
             </div>
           </div>
         </div>
@@ -146,7 +147,44 @@
               <input type="text" placeholder="Enter Subject" id="subject" />
               <label for="message">Your Message*</label>
               <textarea id="message" placeholder="Enter Here..." cols="64" rows="10"></textarea>
-              <a href="" class="message d-flex text-decoration-none">Send Message <img src="../assets/images/Arrow 2.png" alt="aarrow" class=""></a>
+
+             <button
+            type="button"
+            class="message d-flex text-decoration-none"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+          Send Message<img src="../assets/images/Arrow 2.png" alt="aarrow" class="">
+          </button>
+          <!-- Modal-------------------  -->
+          <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="madal-img">
+                <img src="../assets/images/tada.png" alt="" />
+              </div>
+              <div class="modal-content">
+                <p>
+                  Thank you for reaching out to us, your message has been recieved and necessary actions would be taken
+                </p>
+              </div>
+    
+              <div class="modal-footer">
+                <a href="contact.html"
+                  ><button type="button" class="modal-btn">Back To Contact Us</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
           </div>
           <div class="address-card">
               <div class="address">

@@ -89,7 +89,47 @@
             </select>
           </div>
           <div class="get-appointed">
-            <a href="" class="appointment-btn" type="submit">Get Your Appointment</a>
+            
+            <button
+            type="button"
+            class="appointment-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+          Get Your Appointment
+          </button>
+
+          <!-- Modal------------------------ -->
+          <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="madal-img">
+                <img src="../assets/images/tada.png" alt="" />
+              </div>
+              <div class="modal-content">
+                <p>
+                  Appointment successfully received, you will be schedule with one
+                  of our professional and Doctors as well as notify as and when your
+                  appointment is due
+                </p>
+              </div>
+    
+              <div class="modal-footer">
+                <a href="index.html"
+                  ><button type="button" class="modal-btn">Back To Home</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
       </div>

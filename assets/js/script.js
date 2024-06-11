@@ -38,3 +38,13 @@ function prevSlide() {
 setInterval(() => {
     nextSlide();
 }, 3000);
+
+// Modal----------------
+<script>
+document.getElementById('openModalBtn').addEventListener('click', function () {
+    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+        keyboard: false
+    });
+    myModal.show();
+});
+</script>
