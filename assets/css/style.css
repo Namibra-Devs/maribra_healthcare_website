@@ -451,50 +451,7 @@ text-decoration: none;
 }
 
 /* Slider------------------ */
-.box {
-  padding: 10px;
-  text-align: center;
 
-  width: 38%; 
-  margin-left: 84px;
-}
-.slider {
-  margin-top: 70px;
-}
-
-.text-above p {
-  margin: 0;
-  padding: 20px 0px;
-}
-
-.image-above p {
-  margin: 0;
-  padding: 20px 0px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.box-title {
-  color: #000; 
-  position: relative;
-  display: inline-block; 
-  margin-top: 10px;
-}
-.box-title::after {
-  content: "";
-  position: absolute;
-  left: 57px;
-  bottom: -5px;
-  width: 40%;
-  height: 3px; /
-  background-color: #04bc01; 
-}
-
-/* Custom styles for carousel indicators */
 
 
 /* Our Team Section----------------- */
