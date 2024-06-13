@@ -1007,70 +1007,7 @@ margin-bottom: 20px;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
 }
-.service-box{
-  border: 5px solid #04BC01;
-  padding: 23px 26px;
-  width: 300px;
-  align-items: center;
-  margin-top: 70px;
-  margin-left: 65px;
-  margin-bottom: 80px;
- 
-}
-.our_service{
-  background-color: transparent;
-  overflow: visible;
-}
-.service-box p{
-  color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.service-text{
-  margin-top: 200px;
-}
-.service-text h4{
-  color: #000;
-font-family: Inter;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 2.4px;
-}
-.service-text p{
-  color: #000;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.2px;
-}
-/* Services Info Section-------------------- */
 
-.nav-pills .nav-link {
-  background: #6AE13D;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  color: white;
-  font-size: 1.2em; /* Increase font size */
-  margin-bottom: 1.5rem;
-}
-
-.nav-pills .nav-link.active {
-  background: #4CAF50; /* Slightly different shade for active state */
-}
-
-.tab-pane {
-  padding: 20px;
-  background: #f9f9f9;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background-color: transparent;
-}
 
 /* Blogs Section----------------- */
 .blog-home{
@@ -1363,63 +1300,6 @@ input, textarea {
 .map{
   margin-top: 130px;
 }
-/* Slider----------------------------- */
-.carousel {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.carousel-control-prev {
-  left: 10px;
-}
-
-.carousel-control-next {
-  right: 10px;
-}
-
 
 /* Appointment Page--------------------------------------------------- */
 .appointments {
