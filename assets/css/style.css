@@ -348,6 +348,66 @@ text-decoration: none;
 }
 
 /* Our Service Section--------------- */
+
+.services .service-wrap {
+  padding-left: 50px;
+}
+
+.services .services-carousel,
+.services .services-slider {
+  overflow: hidden;
+}
+
+.services .service-item {
+  box-sizing: content-box;
+  padding: 20px 0;
+  margin: 30px 15px;
+  position: relative;
+  background: #fff;
+}
+
+.services .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.services .swiper-pagination .swiper-pagination-bullet {
+  width: 28px;
+  height: 9px;
+  background-color: rgb(238, 235, 235);
+  opacity: 1;
+  border-radius: 25%;
+}
+
+.services .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #04BC01;
+}
+
+.service-title {
+  padding: 20px 0;
+}
+
+.service-img {
+  padding-bottom: 50px;
+}
+
+.service-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service-title h2:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  background-color: #04BC01;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 20%;
+  margin-top: 5px;
+}
+
 .services{
   position: relative;
   width: 100%;
@@ -1007,7 +1067,70 @@ margin-bottom: 20px;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
 }
+.service-box{
+  border: 5px solid #04BC01;
+  padding: 23px 26px;
+  width: 300px;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 65px;
+  margin-bottom: 80px;
+ 
+}
+.our_service{
+  background-color: transparent;
+  overflow: visible;
+}
+.service-box p{
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.service-text{
+  margin-top: 200px;
+}
+.service-text h4{
+  color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.4px;
+}
+.service-text p{
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+/* Services Info Section-------------------- */
 
+.nav-pills .nav-link {
+  background: #6AE13D;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.2em; /* Increase font size */
+  margin-bottom: 1.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background: #4CAF50; /* Slightly different shade for active state */
+}
+
+.tab-pane {
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+}
 
 /* Blogs Section----------------- */
 .blog-home{
@@ -1300,6 +1423,7 @@ input, textarea {
 .map{
   margin-top: 130px;
 }
+
 
 /* Appointment Page--------------------------------------------------- */
 .appointments {
