@@ -1701,3 +1701,23 @@ transition: 0.5s;
   color: #000;
 }
 
+
+/* RESPONSIVENESS --------------------------------------------------------------------------- */
+
+/* Header Section--------- */
+@media (max-width: 768px) {
+  .contact-section {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .contacts {
+    margin-bottom: 10px;
+  }
+  .vertical-separator {
+    display: none;
+  }
+}
