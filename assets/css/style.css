@@ -1412,7 +1412,7 @@ input, textarea {
  border-radius: 20px;
   transition: ease 0.5s;
   border: none;
- 
+ gap: 10px;
 }
 .in-touch button:hover{
   background: #abff7b;
