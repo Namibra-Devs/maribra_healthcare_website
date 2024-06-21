@@ -603,7 +603,7 @@ text-decoration: none;
   font-weight: 500;
   line-height: normal;
 }
-.our-products .btn {
+.services-wrapper a{
   display: inline-flex;
   padding: 10px 22px;
   justify-content: center;
@@ -619,10 +619,12 @@ text-decoration: none;
   font-weight: 600;
   line-height: normal;
   width: 135px;
-  margin-left: 50%;
+  margin-top: 20px;
+  margin-left: 45%;
   transition: 0.3s;
+  text-decoration: none;
 }
-.our-products .btn:hover {
+.services-wrapper a:hover {
   background: #abff7b;
   color: #000;
 }
