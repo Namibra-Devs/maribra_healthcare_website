@@ -510,9 +510,6 @@ text-decoration: none;
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 
-/* Slider------------------ */
-
-
 
 /* Our Team Section----------------- */
 .team {
@@ -628,6 +625,11 @@ text-decoration: none;
 .our-products .btn:hover {
   background: #abff7b;
   color: #000;
+}
+/* Our Products Slider */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
 }
 
 /* Blogs--------------------------- */
