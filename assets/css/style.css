@@ -116,35 +116,41 @@ text-decoration: none;
   z-index: 1; /* Ensure navbar is above background */
 }
 
-.navbar .btn {
+.navbar-nav a{
   display: inline-flex;
-  padding: 10px 24px;
+  padding: 5px 30px;
   align-items: flex-end;
-  gap: 10px;
+  gap: 30px;
   border-radius: 25px;
   border: 1px solid #04bc01;
   background: #fff;
   color: #000;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 550;
   line-height: normal;
   transition: 0.5s;
+  margin-left: 20px;
 }
-.navbar .btn:hover {
+.navbar-nav a:hover {
   background: #abff7b;
   color: #fff;
 }
 /* Active Button Style */
-.navbar .btn.active {
+.navbar-nav a.active {
   background-color: #fff; /* Change this to your desired active background color */
-  color: #6ae13d; /* Change this to your desired active text color */
+  color: #6ae13d !important; /* Change this to your desired active text color */
   border-color: #6ae13d; /* Change this to match the active background color */
 }
-.nav-items {
+.navbar-nav {
   margin-left: 40px;
+  /* text-align: center; */
+  align-items: left;
+  width: auto;
+
 }
+
 
 /* Hero Section----------------- */
 .hero-section {
@@ -196,12 +202,13 @@ text-decoration: none;
 }
 .hero-info {
   margin-top: 160px;
+  margin-left: 40px;
   display: flex;
 }
 .hero-box {
   display: flex;
-  width: 302px;
-  height: 102px;
+  width: 282px;
+  height: 112px;
   padding: 15px 37px 37px 48px;
   flex-direction: column;
   align-items: center;
@@ -603,6 +610,11 @@ text-decoration: none;
   font-weight: 500;
   line-height: normal;
 }
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
 .services-wrapper a{
   display: inline-flex;
   padding: 10px 22px;
@@ -619,8 +631,6 @@ text-decoration: none;
   font-weight: 600;
   line-height: normal;
   width: 135px;
-  margin-top: 20px;
-  margin-left: 45%;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -651,8 +661,7 @@ text-decoration: none;
 }
 
 .blog-image img {
-  /* max-width: 100%; */
-  width: 436px;
+   width: 436px;
   height: 248px;
 }
 
@@ -706,22 +715,30 @@ text-decoration: none;
   margin-bottom: 4px;
 }
 
-.btn {
-  background-color: #04bc01;
-  color: #fff;
+.read-btn {
+  display: flex;
+  padding: 10px 16px;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 25px;
+  background: var(--04-bc-01, #04bc01);
+  color: var(--neutral-color, #fff);
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  border-radius: 25px;
-  cursor: pointer;
+  text-decoration: none;
+  border: none;
   transition: 0.5s;
 }
 
-.btn:hover {
+.read-btn:hover {
   background: #abff7b;
   color: #000;
+}
+.blog-info a{
+  text-decoration: none;
 }
 
 /* Buttons---------------------------- */
@@ -737,10 +754,53 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
 }
-.contact-nav {
+ {
   background: #fff;
   border-color: #04bc01;
   color: #000;
+}
+.book-btn{
+  display: flex;
+padding: 10px 22px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 1px solid var(--STROKE-COLOR, #6AE13D);
+background: var(--04-bc-01, #04BC01);
+transition: 0.5s;
+color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.book-btn:hover{
+  background: #abff7b;
+  color: #000;
+}
+.bookings-navs a{
+  text-decoration: none;
+}
+.contact-nav{
+  display: flex;
+padding: 10px 22px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+border: 1px solid var(--STROKE-COLOR, #6AE13D);
+color: #000;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.contact-nav:hover{
+  background: #abff7b;
+  color: #fff;
 }
 
 /* Footer Section------------------------------ */
@@ -880,7 +940,7 @@ text-decoration: none;
   border-bottom: 100px solid transparent;
 }
 .copy {
-  /* text-align: center; */
+  
   width: 100%; /* Optional: ensure it takes full width */
 }
 .copy p {
@@ -1714,18 +1774,321 @@ transition: 0.5s;
 
 /* Header Section--------- */
 @media (max-width: 768px) {
-  .contact-section {
-    justify-content: center !important;
-    text-align: center;
-  }
-  .social-links {
-    justify-content: center !important;
-    margin-top: 10px;
-  }
-  .contacts {
-    margin-bottom: 10px;
-  }
-  .vertical-separator {
+  .header {
     display: none;
+  }
+}
+
+/* Logo Section--------------------- */
+@media (max-width: 768px) {
+  .title .logo-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: ;
+  }
+
+  .title .logo-img img {
+    width: 40px; /* Adjust as needed */
+  }
+
+  .title .logo-text {
+    font-size: 1rem; /* Adjust as needed */
+    margin-left: 5px;
+  }
+
+  .title .logo-book {
+    flex-shrink: 0;
+    margin-left: 30px;
+  }
+
+  .title .logo-book .btn {
+    font-size: 0.8rem; /* Adjust as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    margin-right: 10px;
+  }
+  .logo-left {
+    flex-grow: 1; /* Take available space */
+  }
+
+  .logo-book {
+    display: none; /* Hide button on mobile view */
+  }
+  .logo {
+    flex-direction: row; /* Align logo and toggler inline */
+    justify-content: space-between; /* Align items inline */
+    width: 100%; /* Full width */
+  }
+}
+
+/* Navbar Section--------------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    width: 90vw; /* Full viewport width */
+    
+ 
+    background-color: transparent; /* Remove green background */
+   
+  }
+
+  .navbar-collapse {
+    background-color: #fff; /* Background color for collapsed navbar */
+   padding: 20px 0px;
+    
+    width: 90%;
+    margin-right: 60px;
+  }
+
+  .navbar-toggler {
+    border-color: transparent; /* Remove border color from the burger icon */
+    margin-left: 85%;
+    margin-top: -160px;
+  }
+
+
+
+  .navbar-nav .nav-link {
+    color: #333; /* Text color of links when collapsed */
+    border: none; /* Remove borders from nav-links */
+    margin-right: 0; /* Reset margin for mobile */
+    text-align: right; /* Align text to left */
+   
+
+  }
+
+  .navbar-nav .nav-link.active {
+    background-color: transparent; /* Remove green background */
+    color: green; /* Active link color */
+  }
+ 
+}
+
+/* Hero Seection--------------------------- */
+
+/* Tablet View */
+@media (max-width: 1201px) and (min-width: 768px) {
+  .hero-header {
+    font-size: 40px;
+  }
+
+  .hero-info .hero-box{
+  display: none;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .hero {
+    padding: 20px 0;
+  }
+
+  .hero-header {
+    font-size: 1.8rem;
+    
+  }
+
+  .hero-info {
+    margin-top: 20px;
+  }
+
+  .hero-info .hero-box {
+ display: none;
+  }
+
+  .hero-info .hero-box img {
+    max-width: 60px;
+  }
+}
+
+/* About Us page--------------------- */
+/* Large Devices */
+@media (max-width: 1200px) {
+  .about-text {
+    margin-left: 30px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+}
+
+/* Medium Devices */
+@media (max-width: 992px) {
+  .about-us {
+    flex-direction: column;
+  }
+  .about-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 8px 12px;
+  }
+}
+
+/* Small Devices */
+@media (max-width: 768px) {
+  .about-images {
+    flex-direction: column;
+  }
+  .left-column,
+  .right-column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text {
+    margin-top: 15px;
+  }
+  .stacked-images img,
+  .right-column img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+  .title h3 {
+    font-size: 16px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 6px 10px;
+  }
+}
+
+/* Our Team Section------------------------------------------ */
+@media (max-width: 992px) {
+  .blog-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .blog-info {
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%;
+    gap: 10px; /* Add gap to space out items */
+  }
+
+  .blog-info .date {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .blog-info span {
+    margin-bottom: 0;
+  }
+
+  .read-btn {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-content {
+    font-size: 16px;
+  }
+
+  .blog-info {
+    font-size: 16px;
+    gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .blog-info .date {
+    font-size: 14px;
+  }
+  .date{
+    margin-top: 15px;
+  }
+
+  .date-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .read-btn {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Footer Section------------------------------ */
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .info, .contact {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .navs, .hours {
+    flex: 1 1 50%;
+    margin-bottom: 20px;
+  }
+  .icon-left{
+    margin-top: -50px;
+  }
+  .navs-lists{
+    margin-top: -10px;
+  }
+.navs-title{
+  margin-top: -20px;
+}
+  .footer-down {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+.footer-down .copy{
+  border: none;
+}
+  .sign-up {
+    order: -1;
+    flex: 1 1 100%;
+    padding: 10px 0;
+    text-align: center;
+    border: none;
+  }
+
+  .copy {
+    flex: 1 1 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+  }
+
+  .email {
+    max-width: 250px;
+    margin-top: 10px;
+  
+  }
+
+  .email input[type="email"] {
+    font-size: 12px;
+  }
+
+  .email button {
+    padding: 9px 10px;
+    font-size: 12px;
   }
 }
