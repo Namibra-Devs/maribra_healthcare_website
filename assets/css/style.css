@@ -348,6 +348,66 @@ text-decoration: none;
 }
 
 /* Our Service Section--------------- */
+
+.services .service-wrap {
+  padding-left: 50px;
+}
+
+.services .services-carousel,
+.services .services-slider {
+  overflow: hidden;
+}
+
+.services .service-item {
+  box-sizing: content-box;
+  padding: 20px 0;
+  margin: 30px 15px;
+  position: relative;
+  background: #fff;
+}
+
+.services .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.services .swiper-pagination .swiper-pagination-bullet {
+  width: 28px;
+  height: 9px;
+  background-color: rgb(238, 235, 235);
+  opacity: 1;
+  border-radius: 25%;
+}
+
+.services .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #04BC01;
+}
+
+.service-title {
+  padding: 20px 0;
+}
+
+.service-img {
+  padding-bottom: 50px;
+}
+
+.service-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service-title h2:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  background-color: #04BC01;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 9%;
+  margin-top: 5px;
+}
+
 .services{
   position: relative;
   width: 100%;
@@ -450,9 +510,6 @@ text-decoration: none;
   background-color: #04bc01; /* Match this with the background-color of ::after */
 }
 
-/* Slider------------------ */
-
-
 
 /* Our Team Section----------------- */
 .team {
@@ -546,7 +603,7 @@ text-decoration: none;
   font-weight: 500;
   line-height: normal;
 }
-.our-products .btn {
+.services-wrapper a{
   display: inline-flex;
   padding: 10px 22px;
   justify-content: center;
@@ -562,12 +619,19 @@ text-decoration: none;
   font-weight: 600;
   line-height: normal;
   width: 135px;
-  margin-left: 50%;
+  margin-top: 20px;
+  margin-left: 45%;
   transition: 0.3s;
+  text-decoration: none;
 }
-.our-products .btn:hover {
+.services-wrapper a:hover {
   background: #abff7b;
   color: #000;
+}
+/* Our Products Slider */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
 }
 
 /* Blogs--------------------------- */
@@ -1348,7 +1412,7 @@ input, textarea {
  border-radius: 20px;
   transition: ease 0.5s;
   border: none;
- 
+ gap: 10px;
 }
 .in-touch button:hover{
   background: #abff7b;
@@ -1362,62 +1426,6 @@ input, textarea {
 }
 .map{
   margin-top: 130px;
-}
-/* Slider----------------------------- */
-.carousel {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.carousel-control-prev {
-  left: 10px;
-}
-
-.carousel-control-next {
-  right: 10px;
 }
 
 
@@ -1701,3 +1709,23 @@ transition: 0.5s;
   color: #000;
 }
 
+
+/* RESPONSIVENESS --------------------------------------------------------------------------- */
+
+/* Header Section--------- */
+@media (max-width: 768px) {
+  .contact-section {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .contacts {
+    margin-bottom: 10px;
+  }
+  .vertical-separator {
+    display: none;
+  }
+}
