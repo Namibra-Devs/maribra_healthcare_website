@@ -1087,7 +1087,11 @@ height: 436px;
 background: rgba(0, 0, 0, 0.46);
 margin-top: 60px;
 margin-bottom: 20px;
+align-items: center;
 
+}
+.box-img img{
+margin-left: 42%;
 }
 .info-box{
   border: solid 5px #fff;
@@ -2091,4 +2095,106 @@ transition: 0.5s;
     padding: 9px 10px;
     font-size: 12px;
   }
+}
+
+
+/* About Us------------------------ */
+/* Mobile view (default) */
+@media (max-width: 750px) {
+  .about-us {
+   margin-top: 100px;
+  }
+  .about-header{
+    margin-top: 80%;
+   text-align: center;
+   margin-left: -30px;
+  }
+ 
+
+  .team-card {
+    margin-left: -4px;
+  width: 150px;
+ 
+  }
+
+  .about-text h4{
+    order: 3;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -45px;
+  }
+  .about-text{
+    width: 250px;
+    margin-right: -100px;
+    margin-top: -65%;
+  }
+
+  
+  .accordion-button {
+    font-size: 14px; /* Adjust the font size as needed */
+   
+  }
+
+  .accordion .accordion-item {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .our-team{
+    margin-top: -50px;
+  }
+  .info-box{
+    width: 113px;
+    padding: 10px 20px;
+  }
+  .info-box span{
+    font-size: 16px;
+  }
+  .info-box p{
+    font-size: 14px;
+  }
+  .box-img img{
+    margin-left: 6px;
+  }
+}
+
+/* Tablet view (576px to 767px) */
+@media (min-width: 741px) and (max-width: 990px) {
+  .about-us {
+    margin-top: 50px;
+   }
+   .about-header{
+     margin-top: 60%;
+    text-align: center;
+    margin-left: -30px;
+   }
+  
+ 
+   .team-card {
+     margin-left: -1px;
+   width: 220px;
+  
+   }
+ 
+   .about-text h4{
+     order: 3;
+     font-size: 19px;
+     text-align: center;
+     margin-top: -5px;
+   }
+   .about-text{
+     width: 380px;
+     margin-right: -100px;
+     margin-top: -65%;
+   }
+ 
+   
+   .accordion-button {
+     font-size: 18px; /* Adjust the font size as needed */
+    
+   }
+ 
+   .accordion .accordion-item {
+     font-size: 18px;
+     margin-left: 20px;
+   }
 }
