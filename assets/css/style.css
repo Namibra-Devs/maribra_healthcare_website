@@ -1159,7 +1159,7 @@ font-weight: 500;
 line-height: normal;
 }
 .service-text{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .service-text h4{
   color: #000;
@@ -2267,4 +2267,17 @@ transition: 0.5s;
     margin-bottom: 20px;
     margin-top: 10px;
   }
+}
+
+/* Services Page------------------------ */
+@media only screen and (max-width: 995px) {
+  .service-text h4{
+    font-size: 30px;
+  }
+  .service-text p{
+    font-size: 20;
+  }
+ .box-img img{
+  margin-left: 45%;
+ }  
 }
