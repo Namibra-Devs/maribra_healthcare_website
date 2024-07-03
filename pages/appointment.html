@@ -15,125 +15,108 @@
   </head>
   <body>
     <section class="appointments">
-      <div class="appointment d-flex">
-        <div class="profile-card">
-          <div class="logo-name d-flex">
-            <div class="profile-log">
-              <img src="../assets/images/logo.png" alt="" />
-            </div>
-            <div class="profile-title">
-              MARIBRA HEALTHCARE <br />
-              LIMITED
-            </div>
-          </div>
-          <div class="profile-image">
-            <img src="../assets/images/appointment.png" alt="appointment" />
-          </div>
-          <div class="profile-text">
-            <p>Get in touch with our professional Doctors at your convivence</p>
-          </div>
-        </div>
-        <div class="details-card">
-          <div class="details-title">
-            <h4>
-              Healthcare, without the headaches and trauma of going through long
-              process
-            </h4>
-          </div>
-          <div class="radios d-flex">
-            <div class="radio-group">
-              <div class="meeting">
-                <input type="radio" id="meet" name="option" value="1" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 profile-card align-items-center">
+            <div class="logo-name d-flex">
+              <div class="profile-log">
+                <img src="../assets/images/logo.png" alt="" />
               </div>
-              <div class="meet-label">
-                <label for="meet">In Doctor Chamber</label>
+              <div class="profile-title">
+                MARIBRA HEALTHCARE <br />
+                LIMITED
               </div>
             </div>
-            <div class="radio-group">
-              <div class="calling">
-                <input type="radio" id="call" name="option" value="2" />
-              </div>
-              <div class="call-label">
-                <label for="call">In Video/Voice Call</label>
-              </div>
+            <div class="profile-image">
+              <img src="../assets/images/appointment.png" alt="appointment" />
+            </div>
+            <div class="profile-text">
+              <p>Get in touch with our professional Doctors at your convenience</p>
             </div>
           </div>
-          <div class="full-name">
-            <label for="name">Patients Full Name</label>
-            <input type="text" placeholder="Kwame Baah" id="name" />
-          </div>
-          <div class="mobile">
-            <label for="number">Mobile Number</label>
-            <input type="text" placeholder="Enter Number" id="number" />
-          </div>
-          <div class="date-time d-flex">
-            <div class="field">
-              <label for="date">Proffered Date</label>
-              <input type="text" required placeholder="dd/mm/yy" id="date" />
+          <div class="col-md-8 col-sm-12 details-card">
+            <div class="details-title">
+              <h4>
+                Healthcare, without the headaches and trauma of going through long
+                processes
+              </h4>
             </div>
-            <div class="time">
-              <label for="time">Preferred Time</label>
-              <input type="text" required placeholder="12:30 pm" id="time" />
+            <div class="radios d-flex">
+              <div class="radio-group">
+                <div class="meeting">
+                  <input type="radio" id="meet" name="option" value="1" />
+                </div>
+                <div class="meet-label">
+                  <label for="meet">In Doctor Chamber</label>
+                </div>
+              </div>
+              <div class="radio-group">
+                <div class="calling">
+                  <input type="radio" id="call" name="option" value="2" />
+                </div>
+                <div class="call-label">
+                  <label for="call">In Video/Voice Call</label>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="select">
-            <h4>Select Type of Consultation</h4>
-            <select
-              class="form-select form-select-lg"
-              aria-label="Large select example"
-            >
-              <option selected>Select the consultation choice</option>
-              <option value="1">General Consultation Service</option>
-              <option value="2">General Consultation Service</option>
-              <option value="3">General Consultation Service</option>
-            </select>
-          </div>
-          <div class="get-appointed">
-            
-            <button
-            type="button"
-            class="appointment-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-          Get Your Appointment
-          </button>
-
-          <!-- Modal------------------------ -->
-          <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="madal-img">
-                <img src="../assets/images/tada.png" alt="" />
+            <div class="full-name">
+              <label for="name">Patients Full Name</label>
+              <input type="text" placeholder="Kwame Baah" id="name" required />
+            </div>
+            <div class="mobile">
+              <label for="number">Mobile Number</label>
+              <input type="text" placeholder="Enter Number" id="number" required/>
+            </div>
+            <div class="date-time d-flex">
+              <div class="field">
+                <label for="date">Preferred Date</label>
+                <input type="text" required placeholder="dd/mm/yy" id="date" />
               </div>
-              <div class="modal-content">
-                <p>
-                  Appointment successfully received, you will be schedule with one
-                  of our professional and Doctors as well as notify as and when your
-                  appointment is due
-                </p>
+              <div class="time">
+                <label for="time">Preferred Time</label>
+                <input type="text" required placeholder="12:30 pm" id="time" />
               </div>
+            </div>
+            <div class="select">
+              <h4>Select Type of Consultation</h4>
+              <select class="form-select form-select-lg" aria-label="Large select example">
+                <option selected>Select the consultation choice</option>
+                <option value="1">General Consultation Service</option>
+                <option value="2">General Consultation Service</option>
+                <option value="3">General Consultation Service</option>
+              </select>
+            </div>
+            <div class="get-appointed">
+              <button type="button" class="appointment-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Get Your Appointment
+              </button>
     
-              <div class="modal-footer">
-                <a href="/index.html"
-                  ><button type="button" class="modal-btn">Back To Home</button></a
-                >
+              <!-- Modal------------------------ -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="madal-img">
+                      <img src="../assets/images/tada.png" alt="" />
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Appointment successfully received, you will be scheduled with one
+                        of our professional Doctors and notified when your
+                        appointment is due
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="/index.html"><button type="button" class="modal-btn">Back To Home</button></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Scripts -->
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -1516,13 +1516,13 @@ input, textarea {
   flex: 2; /* Make this div take up more space than the profile card */
   border-radius: 8px; /* Optional: Add rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-  
+  margin-left: 20px;
 }
 .logo-name{
   display: inline-flex;
 align-items: center;
 gap: 23.859px;
-margin-bottom: 40px;
+margin-bottom: 20px;
 margin-left: 60px;
 }
 .profile-title{
@@ -1545,8 +1545,8 @@ line-height: normal;
 letter-spacing: 0.96px;
 }
 .profile-image img {
-  width: 588.252px;
-height: 477.805px;
+  width: 100%;
+height: 70%;
   border-radius: 20px; 
 }
 .details-title h4{
@@ -1686,7 +1686,7 @@ letter-spacing: 0.96px;
 }
 
 .time{
-  margin-left: 120px;
+  margin-left: 100px;
 }
 .details-title h4 {
   color: #000;
@@ -1729,6 +1729,7 @@ letter-spacing: 0.5px;
 .get-appointed button:hover{
   background: #6ae13d;
 color: #000;
+border: none;
 }
 
 /* Modal Pop-Up----------------------- */
@@ -2197,4 +2198,55 @@ transition: 0.5s;
      font-size: 18px;
      margin-left: 20px;
    }
+}
+
+/* Appointment PAge----------------------- */
+
+
+@media only screen and (max-width: 995px){
+  .profile-title {
+    font-size: 16px;
+  }
+  .details-title h4 {
+    font-size: 18px;
+  }
+  .profile-image img{
+    width: 90%;
+    height: 70%;
+  }
+  .profile-card{
+    margin-bottom: 40px;
+  }
+  .profile-text{
+    margin-top: -1px;
+  }
+  .mobile input{
+    width: 100%;
+  }
+  .date-time input{
+    width: 100%;
+  }
+  .accordion-button {
+    font-size: 16px;
+  }
+  .radios {
+    flex-direction: column;
+  }
+  /* .radio-group {
+    margin-bottom: 10px;
+  } */
+  .date-time {
+    flex-direction: column;
+  }
+
+  .time {
+    width: 100%;
+    margin-left: -1px;
+  } 
+  .appointment-btn{
+    width: 60%;
+   text-wrap: nowrap;
+   padding: 8px;
+   margin-left: 20%;
+  }
 }
