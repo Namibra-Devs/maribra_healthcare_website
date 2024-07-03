@@ -1257,8 +1257,8 @@ letter-spacing: 1.2px;
 /* Additional styling */
 .blogs-image img {
   width: 100%;
-  height: 433px;
-  margin-top: 20px;
+  height: px;
+ 
  
 }
 
@@ -1778,14 +1778,14 @@ transition: 0.5s;
 /* RESPONSIVENESS --------------------------------------------------------------------------- */
 
 /* Header Section--------- */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .header {
     display: none;
   }
 }
 
 /* Logo Section--------------------- */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .title .logo-left {
     flex: 1;
     display: flex;
@@ -1827,7 +1827,7 @@ transition: 0.5s;
 }
 
 /* Navbar Section--------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .navbar {
     width: 90vw; /* Full viewport width */
     
@@ -2101,7 +2101,7 @@ transition: 0.5s;
 
 /* About Us------------------------ */
 /* Mobile view (default) */
-@media (max-width: 750px) {
+@media (max-width: 995px) {
   .about-us {
    margin-top: 100px;
   }
@@ -2232,9 +2232,7 @@ transition: 0.5s;
   .radios {
     flex-direction: column;
   }
-  /* .radio-group {
-    margin-bottom: 10px;
-  } */
+
   .date-time {
     flex-direction: column;
   }
@@ -2248,5 +2246,17 @@ transition: 0.5s;
    text-wrap: nowrap;
    padding: 8px;
    margin-left: 20%;
+  }
+}
+
+/* Blogs Page------------------------------- */
+@media only screen and (max-width: 1028px) {
+  .blogs-items{
+    margin-top: 100px;
+  }
+  .second-crd{
+    width: 220%;
+    margin-left: -70px;
+    margin-top: -80px;
   }
 }
