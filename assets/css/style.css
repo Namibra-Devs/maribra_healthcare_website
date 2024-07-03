@@ -2260,3 +2260,11 @@ transition: 0.5s;
     margin-top: -80px;
   }
 }
+
+/* Contact Us Page------------------------------- */
+@media only screen and (max-width: 995px) {
+  .connect{
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
