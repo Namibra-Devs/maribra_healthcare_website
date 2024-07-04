@@ -290,7 +290,7 @@ text-decoration: none;
   width: 347px;
   height: 522px;
 }
-.about-text {
+.about-texts {
   flex: 1; /* Allow text to take remaining space */
   margin-left: 60px;
   margin-top: 22px;
@@ -311,7 +311,7 @@ text-decoration: none;
   font-weight: 700;
   line-height: normal;
 }
-.about-text p {
+.about-texts p {
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -320,10 +320,10 @@ text-decoration: none;
   line-height: normal;
   letter-spacing: 0.8px;
 }
-.about-text a{
+.about-texts a{
   text-decoration: none;
 }
-.about-text .btn {
+.about-texts .btn {
   display: flex;
   padding: 10px 16px;
   align-items: flex-end;
@@ -337,7 +337,7 @@ text-decoration: none;
   font-weight: 600;
   line-height: normal;
 }
-.about-text .btn:hover {
+.about-texts .btn:hover {
   background: #abff7b;
   color: #000;
 }
@@ -1814,6 +1814,7 @@ transition: 0.5s;
   }
   .logo-left {
     flex-grow: 1; /* Take available space */
+    margin-left: 13px;
   }
 
   .logo-book {
