@@ -1025,9 +1025,9 @@ line-height: normal;
 }
 
 /* About Us PAge---------------------------------------- */
-.about-home{
+/* .about-home{
   background: rgba(0, 0, 0, 0.46);
-}
+} */
 .about-bg {
   position: absolute;
   /* top: 10%; */
@@ -1907,7 +1907,7 @@ transition: 0.5s;
   }
 }
 
-/* About Us page--------------------- */
+/* About Us Section--------------------- */
 /* Large Devices */
 @media (max-width: 1200px) {
   .about-text {
@@ -1948,6 +1948,12 @@ transition: 0.5s;
     margin-left: 0;
     margin-right: 0;
   }
+  .title h4{
+    font-size: 30px;
+  }
+  .about-texts p{
+    font-size: 16px;
+  }
   .about-text {
     margin-top: 15px;
   }
@@ -1965,6 +1971,9 @@ transition: 0.5s;
   }
   .about-text p {
     font-size: 14px;
+  }
+  .title h4{
+    font-size: 30px;
   }
   .btn {
     padding: 6px 10px;
@@ -2011,7 +2020,7 @@ transition: 0.5s;
 
   .blog-info {
     font-size: 16px;
-    gap: 5px; /* Reduce gap for smaller screens */
+    gap: 5px; 
   }
 
   .blog-info .date {
@@ -2033,7 +2042,7 @@ transition: 0.5s;
 }
 
 /* Footer Section------------------------------ */
-/* Responsive Styles */
+
 @media (max-width: 767px) {
   .footer-top {
     flex-direction: column;
@@ -2101,106 +2110,58 @@ transition: 0.5s;
 }
 
 
-/* About Us------------------------ */
-/* Mobile view (default) */
-@media (max-width: 995px) {
-  .about-us {
-   margin-top: 100px;
-  }
-  .about-header{
-    margin-top: 80%;
-   text-align: center;
-   margin-left: -30px;
-  }
+/* About Us page------------------------ */
+.abouts-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; 
+  margin-top: 80px;
+}
+.about-home{
  
-
-  .team-card {
-    margin-left: -4px;
-  width: 150px;
- 
-  }
-
-  .about-text h4{
-    order: 3;
-    font-size: 14px;
-    text-align: center;
-    margin-top: -45px;
-  }
-  .about-text{
-    width: 250px;
-    margin-right: -100px;
-    margin-top: -65%;
-  }
-
-  
-  .accordion-button {
-    font-size: 14px; /* Adjust the font size as needed */
-   
-  }
-
-  .accordion .accordion-item {
-    font-size: 14px;
-    margin-left: 20px;
-  }
-  .our-team{
-    margin-top: -50px;
-  }
-  .info-box{
-    width: 113px;
-    padding: 10px 20px;
-  }
-  .info-box span{
-    font-size: 16px;
-  }
-  .info-box p{
-    font-size: 14px;
-  }
-  .box-img img{
-    margin-left: 6px;
-  }
 }
 
-/* Tablet view (576px to 767px) */
-@media (min-width: 741px) and (max-width: 990px) {
-  .about-us {
-    margin-top: 50px;
-   }
-   .about-header{
-     margin-top: 60%;
-    text-align: center;
-    margin-left: -30px;
-   }
-  
- 
-   .team-card {
-     margin-left: -1px;
-   width: 220px;
-  
-   }
- 
-   .about-text h4{
-     order: 3;
-     font-size: 19px;
-     text-align: center;
-     margin-top: -5px;
-   }
-   .about-text{
-     width: 380px;
-     margin-right: -100px;
-     margin-top: -65%;
-   }
- 
-   
-   .accordion-button {
-     font-size: 18px; /* Adjust the font size as needed */
-    
-   }
- 
-   .accordion .accordion-item {
-     font-size: 18px;
-     margin-left: 20px;
-   }
+
+
+.about-card, .abouts-text {
+  padding: 20px;
+  box-sizing: border-box;
 }
+.abouts-text {
+
+}
+
+@media (max-width: 768px) {
+  .about-card {
+      flex: 0.9;
+  }
+  .abouts-text{
+    flex: 1.5;
+  }
+  /* .about-header{
+    margin-top: 84%;
+    margin-left: 18%;
+  } */
+}
+@media (max-width: 576px){
+.about-header{
+  margin-top: 99%;
+  margin-left: 18%;
+}
+.info-box{
+  width: 200px;
+  padding: 10px 5px;
+  margin-right: 35px;
+}
+.info-box p{
+  font-size: 14px;
+}
+.box-img img{
+  margin-left: 33%;
+}
+}
+
+
 
 /* Appointment PAge----------------------- */
 
@@ -2279,7 +2240,5 @@ transition: 0.5s;
   .service-text p{
     font-size: 20;
   }
- .box-img img{
-  margin-left: 45%;
- }  
+
 }
