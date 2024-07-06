@@ -2145,7 +2145,7 @@ transition: 0.5s;
 }
 @media (max-width: 576px){
 .about-header{
-  margin-top: 99%;
+  margin-top: 150%;
   margin-left: 18%;
 }
 .info-box{
