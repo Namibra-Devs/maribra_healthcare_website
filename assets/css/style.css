@@ -237,13 +237,14 @@ text-decoration: none;
   align-items: center;
   justify-content: space-between;
 }
+
 .about-images {
   display: flex;
-  align-items: flex-start; /* Align images to the top */
+  align-items: flex-start; 
 }
 
 .left-column {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   display: flex;
@@ -276,13 +277,12 @@ text-decoration: none;
 }
 .stacked-images img:first-child {
   top: 0;
-  margin-bottom: 20px; /* Adjust the desired gap between images */
+  margin-bottom: 20px; 
 }
 
 .right-column {
   width: 347px;
   height: 522px;
-  /* margin-top: 10px; */
   margin-left: 20px;
 }
 
@@ -291,7 +291,7 @@ text-decoration: none;
   height: 522px;
 }
 .about-texts {
-  flex: 1; /* Allow text to take remaining space */
+  flex: 1;
   margin-left: 60px;
   margin-top: 22px;
 }
@@ -351,7 +351,7 @@ text-decoration: none;
 }
 
 .btn {
-  margin-top: 20px; /* Add space above the button */
+  margin-top: 20px; 
 }
 
 /* Our Service Section--------------- */
@@ -421,7 +421,7 @@ text-decoration: none;
   width: 100%;
   padding: 50px 0;
   
-  overflow: visible; /* Allow the background image to overflow */
+  overflow: visible;
 }
 .service-bg{
   position: absolute;
@@ -468,21 +468,21 @@ text-decoration: none;
   content: "";
   position: absolute;
   left: 31;
-  bottom: -17px; /* Adjust the position as needed */
-  width: calc(47% - 0px); /* Adjust width to leave space for the squared end */
-  height: 3px; /* Thickness of the underline */
-  background-color: #04bc01; /* Color of the underline */
+  bottom: -17px;
+  width: calc(47% - 0px); 
+  height: 3px;
+  background-color: #04bc01; 
 }
 
 .custom-underline::before {
   content: "";
   position: absolute;
   left: 116;
-  bottom: -23px; /* Match this with the `bottom` value of ::after */
-  width: 17px; /* Length of the squared end */
-  height: 17px; /* Match this with the height of ::after */
-  transform: rotate(36deg); /* Rotate to create the diamond shape */
-  background-color: #04bc01; /* Match this with the background-color of ::after */
+  bottom: -23px; 
+  width: 17px; 
+  height: 17px; 
+  transform: rotate(36deg); 
+  background-color: #04bc01;
 }
 /* Our Team Title ---------------*/
 .team-bg {
@@ -493,7 +493,7 @@ text-decoration: none;
   height: 130%;
   background: url('../images/left~2.png') no-repeat center center/cover;
   z-index: -1;
-  opacity: 20.5; /* Adjust the opacity to your preference */
+  opacity: 20.5; 
 }
 .team-title {
   display: inline-block;
@@ -503,10 +503,10 @@ text-decoration: none;
   content: "";
   position: absolute;
   left: 31;
-  bottom: -17px; /* Adjust the position as needed */
-  width: calc(47% - 0px); /* Adjust width to leave space for the squared end */
-  height: 3px; /* Thickness of the underline */
-  background-color: #04bc01; /* Color of the underline */
+  bottom: -17px; 
+  width: calc(47% - 0px); 
+  height: 3px; 
+  background-color: #04bc01; 
 }
 .team-title::before {
   content: "";
@@ -1027,9 +1027,7 @@ line-height: normal;
 }
 
 /* About Us PAge---------------------------------------- */
-/* .about-home{
-  background: rgba(0, 0, 0, 0.46);
-} */
+
 .about-bg {
   position: absolute;
   /* top: 10%; */
@@ -1045,18 +1043,23 @@ line-height: normal;
  
 }
 
-.about-header {
-  align-items: center;
-  margin-top: 40%;
- 
-  color: #fff;
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.92px;
- 
+.about_us {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes the full width of its parent */
+  height: 100%; /* Ensure it takes the full height of its parent */
+  
+}
+.abouts-title{
+  color: #FFF;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 1.92px;
+margin-top: 250px;
 }
 
 .about-text h4{
@@ -1124,7 +1127,7 @@ margin-left: 42%;
 }
 
 
-/* Our Services-------------------------------------------- */
+/* Our Services Page-------------------------------------------- */
 
 .services-bg{
   position: absolute;
@@ -2120,11 +2123,9 @@ transition: 0.5s;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch; 
-  margin-top: 80px;
+
 }
-.about-home{
- 
-}
+
 
 
 
@@ -2132,9 +2133,7 @@ transition: 0.5s;
   padding: 20px;
   box-sizing: border-box;
 }
-.abouts-text {
 
-}
 
 @media (max-width: 768px) {
   .about-card {
@@ -2143,20 +2142,17 @@ transition: 0.5s;
   .abouts-text{
     flex: 1.5;
   }
-  /* .about-header{
-    margin-top: 84%;
-    margin-left: 18%;
-  } */
+  .abouts-title{
+    font-size: 25px;
+  }
 }
 @media (max-width: 576px){
-.about-header{
-  margin-top: 150%;
-  margin-left: 18%;
-}
+
 .info-box{
   width: 200px;
   padding: 10px 5px;
-  margin-right: 35px;
+  margin-right: 30px;
+  margin-left: 10px;
 }
 .info-box p{
   font-size: 14px;
@@ -2165,7 +2161,7 @@ transition: 0.5s;
   margin-left: 33%;
 }
 .abouts-text h4{
-  font-size: 18px;
+  font-size: 13px;
 }
 
 }
