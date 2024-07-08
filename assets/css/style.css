@@ -1043,13 +1043,12 @@ line-height: normal;
  
 }
 
-.about_us {
+.abouts_us {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   width: 100%; /* Ensure it takes the full width of its parent */
   height: 100%; /* Ensure it takes the full height of its parent */
-  
 }
 .abouts-title{
   color: #FFF;
@@ -1059,7 +1058,7 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
 letter-spacing: 1.92px;
-margin-top: 250px;
+margin-top: 350px;
 }
 
 .about-text h4{
@@ -2123,11 +2122,8 @@ transition: 0.5s;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch; 
-
+  margin-top: 80px;
 }
-
-
-
 
 .about-card, .abouts-text {
   padding: 20px;
@@ -2137,17 +2133,20 @@ transition: 0.5s;
 
 @media (max-width: 768px) {
   .about-card {
-      flex: 0.9;
+      flex: 1;
   }
   .abouts-text{
     flex: 1.5;
   }
-  .abouts-title{
-    font-size: 25px;
-  }
+
 }
 @media (max-width: 576px){
-
+.abouts-us{
+  margin-top: -40px;
+}
+.abouts-title{
+  font-size: 30px;
+}
 .info-box{
   width: 200px;
   padding: 10px 5px;
@@ -2161,7 +2160,7 @@ transition: 0.5s;
   margin-left: 33%;
 }
 .abouts-text h4{
-  font-size: 13px;
+  font-size: 14px;
 }
 
 }
@@ -2241,9 +2240,11 @@ transition: 0.5s;
 @media only screen and (max-width: 995px) {
   .service-text h4{
     font-size: 30px;
+    margin-top: -20PX;
   }
   .service-text p{
     font-size: 20;
+   
   }
 
 }
