@@ -358,6 +358,7 @@ text-decoration: none;
 
 .services .service-wrap {
   padding-left: 50px;
+ 
 }
 
 .services .services-carousel,
@@ -425,12 +426,13 @@ text-decoration: none;
 .service-bg{
   position: absolute;
   top: 0;
-  left: 100;
+  margin-top: 15px;
   width: 100%;
   height: 100%;
   background: url('../images/right~2.png') no-repeat center center/cover;
   z-index: -1;
-  opacity: 20.5; /* Adjust the opacity to your preference */
+  opacity: 20.5; 
+  
 }
 
 .services-wrapper {
@@ -1040,12 +1042,13 @@ line-height: normal;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
+ 
 }
 
 .about-header {
   align-items: center;
   margin-top: 40%;
-  margin-left: 40%;
+ 
   color: #fff;
   font-family: Inter;
   font-size: 48px;
@@ -1053,6 +1056,7 @@ line-height: normal;
   font-weight: 900;
   line-height: normal;
   letter-spacing: 1.92px;
+ 
 }
 
 .about-text h4{
@@ -1201,9 +1205,7 @@ letter-spacing: 1.2px;
 }
 
 /* Blogs Section----------------- */
-.blog-home{
-  background: rgba(0, 0, 0, 0.46);
-}
+
 .blog-bg {
   position: absolute;
   /* top: 10%; */
@@ -1221,8 +1223,8 @@ letter-spacing: 1.2px;
 /* Featured Service Backround Image-------- */
 .featured-service-bg{
   position: absolute;
-  margin-top: 5%;
-  left: 100;
+ 
+
   width: 100%;
   height: 100%;
   background: url('../images/right~2.png') no-repeat center center/cover;
@@ -2159,6 +2161,10 @@ transition: 0.5s;
 .box-img img{
   margin-left: 33%;
 }
+.abouts-text h4{
+  font-size: 18px;
+}
+
 }
 
 
