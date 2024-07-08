@@ -1980,6 +1980,9 @@ transition: 0.5s;
   .btn {
     padding: 6px 10px;
   }
+  .left-column{
+    display: none;
+  }
 }
 
 /* Our Team Section------------------------------------------ */
