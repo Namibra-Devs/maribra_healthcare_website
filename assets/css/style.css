@@ -165,7 +165,7 @@ text-decoration: none;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.22);
-  
+   
 }
 
 .hero-bg {
@@ -180,6 +180,7 @@ text-decoration: none;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px); /* Move image up by half of its height */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .services-wrapper {
@@ -1040,6 +1041,7 @@ line-height: normal;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
  
 }
 
@@ -1049,6 +1051,7 @@ line-height: normal;
   justify-content: center; /* Center horizontally */
   width: 100%; /* Ensure it takes the full width of its parent */
   height: 100%; /* Ensure it takes the full height of its parent */
+  
 }
 .abouts-title{
   color: #FFF;
@@ -1140,6 +1143,7 @@ margin-left: 42%;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .service-box{
   border: 5px solid #04BC01;
@@ -1220,6 +1224,7 @@ letter-spacing: 1.2px;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
   transform: translateY(-45px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Featured Service Backround Image-------- */
@@ -2251,7 +2256,7 @@ transition: 0.5s;
     font-size: 20;
    
   }
-  .box-img img{
+  .service-box .box-img img{
     margin-left: 100px;
   }
 
