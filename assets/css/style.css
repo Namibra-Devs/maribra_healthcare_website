@@ -1493,9 +1493,7 @@ input, textarea {
   height: 24px;
   margin-right: 10px;
 }
-.map{
-  margin-top: 130px;
-}
+
 
 
 /* Appointment Page--------------------------------------------------- */
@@ -2146,6 +2144,7 @@ transition: 0.5s;
 }
 .abouts-title{
   font-size: 30px;
+ 
 }
 .info-box{
   width: 200px;
@@ -2235,16 +2234,33 @@ transition: 0.5s;
     margin-top: 10px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .contact-us{
+    margin-top: -70px;
+  }
+}
+
 
 /* Services Page------------------------ */
 @media only screen and (max-width: 995px) {
   .service-text h4{
     font-size: 30px;
-    margin-top: -20PX;
+    margin-top: -90PX;
   }
   .service-text p{
     font-size: 20;
    
   }
+  .box-img img{
+    margin-left: 100px;
+  }
 
+}
+@media only screen and (max-width: 768px){
+  .nav-pills {
+ 
+    margin-left: 20px;
+  }
+  
+  
 }
