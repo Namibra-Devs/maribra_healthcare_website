@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Maribra Healthcare Hospital | Login Page</title>
+  </head>
+  <body>
+         <!-- Header Section------------------------------- -->
+         <header class="py-3 pl-3 d-flex align-items-center login-header">
+            <img src="/assets/images/logo.png" alt="Company Logo" class="img-fluid" style="height: 50px;">
+            <h5 class="d-inline-block align-middle ml-2 mb-0" >MARIBRA HEALTHCARE <br>LIMITED.</h5>
+        </header>
+
+        <!-- Login Body---------------------------- -->
+
+        <div class="container d-flex justify-content-center align-items-center login-body" style="min-height: 77vh;">
+            <form class="login-form border p-4 rounded shadow">
+                <h2 class="text-center mb-4">Verify Code</h2>
+                <div class="forgot-text text-left">
+                    <p>Please enter the verification code sent to your email.</p>
+                </div>
+                <form action="verify.php" method="POST ">
+                    <div class="form-group mb-5">
+                        <label for="verification_code" class="verify">Enter Code</label>
+                        <div class="verification-input justify-content-center">
+                            <input type="text" id="digit1" name="digit1" placeholder="0" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" id="digit2" name="digit2" placeholder="1" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" id="digit3" name="digit3" placeholder="-" maxlength="1" pattern="[0-9]" required>
+                            <input type="text" id="digit4" name="digit4" placeholder="-" maxlength="1" pattern="[0-9]" required>
+                        </div>
+                    </div>
+                <button type="submit" class="login-btn btn-success btn-block mb-3 mx-auto">Verify</button>
+                <div class="d-flex justify-content-center">
+                    <p class="">Didn’t receive code?</p>
+                    <a href="/pages/forgotpassword.html" class="forgot text-decoration-none">Resend Code</a>
+                </div>
+            </form>
+            </form>
+        </div>
+
+    <!-- Login Footer--------------------------------------------------------------- -->
+    <footer class="login-footer text-center py-3">
+        &copy;Maribra Healthcare Limited All Right Reserved. Designed and developed by Namibra inc.
+    </footer>
+    <!-- Scripts -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+  </body>
+</html>

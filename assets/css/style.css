@@ -2269,3 +2269,132 @@ transition: 0.5s;
   
   
 }
+
+
+
+/* Login Page---------------------------------------- */
+.login-header{
+  background: #FFF;
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.64px;
+margin-left: 40px;
+}
+.login-header h5{
+  margin-left: 10px;
+}
+.login-body{
+ 
+}
+.login-form{
+  border-radius: 4px;
+  background: #F1F1F0;
+  box-shadow: 0px 12px 26px 0px rgba(16, 30, 115, 0.06);
+}
+.login-form h2{
+  color: #04BC01;
+font-family: Quattrocento;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+}
+.forgot{
+  color: #656565;
+text-align: center;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 19.6px;
+letter-spacing: 0.4px;
+}
+.login-form a:hover{
+  color: #04BC01;
+  text-decoration: underline;
+}
+.login-form p{
+  color: #454545;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0.5px;
+}
+.login-btn{
+  display: flex;
+width: 70%;
+height: 36px;
+padding: 9px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background: #04BC01;
+box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+border: none;
+color: #fff;
+transition: 0.5s;
+}
+
+.login-form button:hover{
+  color: #000;
+  background: #89f18c;
+  width: 60%;
+}
+
+/* Login Footer--------------------------- */
+.login-footer{
+  /* margin-top: auto; */
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.8px;
+background: #F1F1F0;
+}
+
+/* Forgot Password Page------------------- */
+.forgot-text{
+  width: 60%;
+}
+
+/* Verification Page----------------------------------- */
+.verify-code-form {
+  text-align: center;
+}
+.verification-input {
+  display: flex;
+    gap: 20px;
+}
+
+.verification-input input {
+  width: 10%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+  color: #000;
+font-family: Inter;
+font-size: 16.504px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.verify{
+  color: #000;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
