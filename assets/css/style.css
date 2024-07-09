@@ -2366,3 +2366,35 @@ background: #F1F1F0;
 .forgot-text{
   width: 60%;
 }
+
+/* Verification Page----------------------------------- */
+.verify-code-form {
+  text-align: center;
+}
+.verification-input {
+  display: flex;
+    gap: 20px;
+}
+
+.verification-input input {
+  width: 10%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+  color: #000;
+font-family: Inter;
+font-size: 16.504px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.verify{
+  color: #000;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
