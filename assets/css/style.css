@@ -2361,3 +2361,8 @@ line-height: normal;
 letter-spacing: 0.8px;
 background: #F1F1F0;
 }
+
+/* Forgot Password Page------------------- */
+.forgot-text{
+  width: 70%;
+}
