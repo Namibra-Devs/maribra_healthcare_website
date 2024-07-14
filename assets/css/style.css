@@ -1958,6 +1958,9 @@ transition: 0.5s;
   .title h4{
     font-size: 30px;
   }
+  .about-texts {
+    margin-left: 0;
+  }
   .about-texts p{
     font-size: 16px;
   }
