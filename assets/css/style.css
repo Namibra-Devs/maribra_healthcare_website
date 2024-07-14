@@ -2413,6 +2413,9 @@ line-height: normal;
 
 
 /* Dashboard Page-------------------------------------- */
+
+
+/* Body Section-------------------------------------------- */
 .sidebar {
  
   color: #000;
@@ -2483,6 +2486,7 @@ font-size: 24px;
 }
 .icons a {
   margin-left: 5px;
+  text-decoration: none;
 
 }
 
@@ -2561,6 +2565,7 @@ letter-spacing: 0.8px;
 }
 .overlapping-images {
   display: flex;
+  margin-top: 1rem;
 }
 
 .overlapping-images img {
@@ -2610,6 +2615,79 @@ letter-spacing: 0.8px;
 
 .dot-red {
   background-color: black;
+}
+
+/* Responsiveness------------------------------------ */
+
+/* Right Side header section */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-header .form-control {
+    width: calc(100% - 100px); /* Adjust the width of the input field as needed */
+    max-width: 200px; /* Adjust max-width of the input field as needed */
+  }
+
+  .icons {
+    flex-shrink: 0; /* Prevent icons from shrinking */
+    margin-left: auto; /* Push icons to the right */
+    margin-top: 0; /* Remove top margin */
+  }
+  
+  .icons a {
+    display: inline-block;
+  }
+
+  .icons img {
+    max-width: 30px; /* Adjust icon size as needed */
+    vertical-align: middle; /* Align icons vertically */
+  }
+}
+
+/* Circular Graph Section */
+@media (max-width: 768px) {
+  .overlapping-images {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .circular-graph-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .graph-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .d-flex.justify-content-between.align-items-center.mt-3 {
+    flex-direction: column;
+  }
+
+ 
+
+  .graph-details {
+    margin-top: 1rem;
+    color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  }
+  .dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
 }
 
 /* Calendar Section------------------------------- */
