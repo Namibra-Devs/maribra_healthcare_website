@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"
+    />
+    <title>Dashboard</title>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-md-3 sidebar">
+          <div class="sidebar-header mb-5">
+            <img
+              src="/assets/images/logo.png"
+              alt="Company Logo"
+              class="img-fluid"
+              style="height: 50px"
+            />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">
+              MARIBRA HEALTHCARE <br />LIMITED.
+            </h5>
+          </div>
+          <div class="sidebar-links">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <img
+                    src="/assets/images/Control Panel.png"
+                    alt="dashboard"
+                    class="img-fluid"
+                  />Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Tear-Off Calendar.png"
+                    alt="appointments"
+                    class="img-fluid"
+                  />Appointments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Lab Coat.png"
+                    alt="doctors"
+                    class="img-fluid"
+                  />Doctors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Group Message.png"
+                    alt="messages"
+                    class="img-fluid"
+                  />Messages
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/News.png"
+                    alt="blog"
+                    class="img-fluid"
+                  />Blogs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Settings.png"
+                    alt="settings"
+                    class="img-fluid"
+                  />Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Logout Rounded.png"
+                    alt="logout"
+                    class="img-fluid"
+                  />Log Out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9 content justify-content-center dashboard">
+          <div
+            class="dashboard-header d-flex justify-content-end align-items-center p-3"
+          >
+            <input
+              type="text"
+              class="form-control mr-3 mt-3"
+              placeholder="Search...."
+            />
+            <div class="icons">
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18 (1).png"
+                  alt="Messages"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18.png"
+                  alt="Notifications"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Ellipse 17.png"
+                  alt="Profile"
+                  class="profile-img rounded-circle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-content p-4 graph-section">
+            <div class="dashboard-title">
+              <h1>Hello Dr. Ernest</h1>
+              <h2>Welcome on board</h2>
+            </div>
+            <!-- Horizontal Cards -->
+            <div class="dash-card row my-3 justify-content-center">
+              <div class="row dashboard-cards">
+                <div class="dashboard-card d-flex">
+                  <p class="card-texts mt-4">75 <br />Appointments</p>
+                  <img
+                    src="/assets/images/Tear-Off Calendar (1).png"
+                    class="img-fluid mt-4"
+                    alt="Card Image 1"
+                  />
+                </div>
+                <div class="dashboard-card d-flex">
+                  <p class="card-texts mt-4">124,551 <br />Total Patients</p>
+                  <img
+                    src="/assets/images/Out Patient Department.png"
+                    class="img-fluid mt-4"
+                    alt="Card Image 1"
+                  />
+                </div>
+                <div class="dashboard-card d-flex">
+                  <p class="card-texts mt-4">15 <br />Total Doctors</p>
+                  <img
+                    src="/assets/images/Lab Coat (1).png"
+                    class="img-fluid mt-4"
+                    alt="Card Image 1"
+                  />
+                </div>
+                <div class="dashboard-card d-flex">
+                  <p class="card-texts mt-4">GHS 11,000 <br />Income</p>
+                  <img
+                    src="/assets/images/Card Wallet.png"
+                    class="img-fluid mt-4"
+                    alt="Card Image 1"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- First Card -->
+            <div class="container">
+              <div class="graph-card">
+                <div class="graph-body">
+                  <h5 class="graph-title mt-2 mx-4">Patients Percentage</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3 graph-head"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="/assets/images/Out Patient Department.png"
+                        alt="Logo"
+                        class="logo img-fluid mr-2"
+                      />
+                      <h6 class="mb-0">
+                        Total Patients <br /><span>124,551</span>
+                      </h6>
+                    </div>
+                    <div class="overlapping-images">
+                      <img
+                        src="/assets/images/Ellipse 5.png"
+                        class="rounded-circle"
+                        alt="Image 1"
+                      />
+                      <img
+                        src="/assets/images/Ellipse 7.png"
+                        class="rounded-circle"
+                        alt="Image 2"
+                      />
+                      <img
+                        src="/assets/images/Ellipse 8.png"
+                        class="rounded-circle"
+                        alt="Image 3"
+                      />
+                      <img
+                        src="/assets/images/Ellipse 6.png"
+                        class="rounded-circle"
+                        alt="Image 4"
+                      />
+                      <img
+                        src="/assets/images/Ellipse 10.png"
+                        class="rounded-circle"
+                        alt="Image 5"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="circular-graph-container mb-2">
+                      <canvas
+                        id="circularGraph"
+                        width="100"
+                        height="100"
+                      ></canvas>
+                    </div>
+                    <div class="graph-details justify-content-center">
+                      <p class="mb-1">
+                        <span class="dot dot-green"></span>New Patients: 70%
+                      </p>
+                      <p class="mb-1">
+                        <span class="dot dot-yellow"></span>Records: 30%
+                      </p>
+                      <p class="mb-1">
+                        <span class="dot dot-red"></span>In Treatment: 30%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calendar card--------------- -->
+          <div class="container mt-2 calendar-section">
+            <div class="calendar-card border rounded shadow">
+              <h5 class="calendar-title mb-4">Appointment Schedule</h5>
+              <div class="row">
+                <!-- Calendar on the left -->
+                <div class="col-md-7 calendar">
+                  <div id="calendar"></div>
+                </div>
+                <!-- Appointment Cards on the right -->
+                <div class="col-md-5">
+                  <div
+                    class="appointment-card mb-3 p-3 border rounded shadow-sm"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h6 class="day-date mb-1">Monday, 12th July</h6>
+                        <div class="d-flex align-items-center mb-2">
+                          <img
+                            src="/assets/images/time-line.png"
+                            alt="Clock"
+                            class="mr-2"
+                            style="height: 20px"
+                          />
+                          <span>09:00 AM - 10:00 AM</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/profile-light.png"
+                            alt="Profile"
+                            class="mr-2 rounded-circle"
+                            style="height: 30px"
+                          />
+                          <span>John Doe</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="#" class="mr-2"
+                          ><img
+                            src="/assets/images/Group.png"
+                            alt="Accept"
+                            style="height: 25px"
+                        /></a>
+                        <a href="#"
+                          ><img
+                            src="/assets/images/carbon_close-outline.png"
+                            alt="Decline"
+                            style="height: 25px"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="appointment-card mb-3 p-3 border rounded shadow-sm"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h6 class="day-date mb-1">Tuesday, 13th July</h6>
+                        <div class="d-flex align-items-center mb-2">
+                          <img
+                            src="/assets/images/time-line.png"
+                            alt="Clock"
+                            class="mr-2"
+                            style="height: 20px"
+                          />
+                          <span>11:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/profile-light.png"
+                            alt="Profile"
+                            class="mr-2 rounded-circle"
+                            style="height: 30px"
+                          />
+                          <span>Jane Smith</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="#" class="mr-2"
+                          ><img
+                            src="/assets/images/Group.png"
+                            alt="Accept"
+                            style="height: 25px"
+                        /></a>
+                        <a href="#"
+                          ><img
+                            src="/assets/images/carbon_close-outline.png"
+                            alt="Decline"
+                            style="height: 25px"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="appointment-card p-3 border rounded shadow-sm">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h6 class="day-date mb-1">Wednesday, 14th July</h6>
+                        <div class="d-flex align-items-center mb-2">
+                          <img
+                            src="/assets/images/time-line.png"
+                            alt="Clock"
+                            class="mr-2"
+                            style="height: 20px"
+                          />
+                          <span>02:00 PM - 03:00 PM</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/profile-light.png"
+                            alt="Profile"
+                            class="mr-2 rounded-circle"
+                            style="height: 30px"
+                          />
+                          <span>Emily Johnson</span>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="#" class="mr-2"
+                          ><img
+                            src="/assets/images/Group.png"
+                            alt="Accept"
+                            style="height: 25px"
+                        /></a>
+                        <a href="#"
+                          ><img
+                            src="/assets/images/carbon_close-outline.png"
+                            alt="Decline"
+                            style="height: 25px"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Graphs Section----------------------------- -->
+          <div class="container mt-4 graph-section">
+            <div class="row">
+              <!-- Line Graph Card -->
+              <div class="col-md-6">
+                <div class="graph-card border rounded shadow">
+                  <div class="graph-title">
+                    <h5>Revenue Summary</h5>
+                    <span>12th July</span>
+                  </div>
+                  <canvas id="lineGraph" class="graph"></canvas>
+                </div>
+              </div>
+              <!-- Bar Graph Card -->
+              <div class="col-md-6">
+                <div class="graph-card border rounded shadow">
+                  <div class="graph-title">
+                    <h5>MAJOR DISEASES CASES RECORDED</h5>
+                    <span>12th July</span>
+                  </div>
+                  <canvas id="barGraph" class="graph"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <!-- Custom Script for Chart.js -->
+    <script>
+      // Script to create the circular graph
+      document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById("circularGraph").getContext("2d");
+        var circularGraph = new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            datasets: [
+              {
+                data: [70, 30, 30],
+                backgroundColor: ["green", "orange", "black"],
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: {
+              display: false,
+            },
+            cutoutPercentage: 80,
+          },
+        });
+
+        // Initialize FullCalendar
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          headerToolbar: {
+            left: "prev,next today",
+            center: "title",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
+          },
+          events: [
+            // Add your events here
+            {
+              title: "Appointment 1",
+              start: "2024-07-12T09:00:00",
+              end: "2024-07-12T10:00:00",
+            },
+            {
+              title: "Appointment 2",
+              start: "2024-07-13T11:00:00",
+              end: "2024-07-13T12:00:00",
+            },
+            {
+              title: "Appointment 3",
+              start: "2024-07-14T14:00:00",
+              end: "2024-07-14T15:00:00",
+            },
+          ],
+        });
+        calendar.render();
+      });
+      // Script to create the line graph
+      document.addEventListener("DOMContentLoaded", function () {
+        var lineCtx = document.getElementById("lineGraph").getContext("2d");
+        var lineGraph = new Chart(lineCtx, {
+          type: "line",
+          data: {
+            labels: ["0", "1", "2", "3", "4", "5"],
+            datasets: [
+              {
+                label: "",
+                data: [10, 15, 40, 20, 60, 40],
+                borderColor: "blue",
+                fill: false,
+              },
+              {
+                label: "",
+                data: [50, 10, 40, 30, 50, 40],
+                borderColor: "red",
+                fill: false,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+
+        // Script to create the bar graph
+        var barCtx = document.getElementById("barGraph").getContext("2d");
+        var barGraph = new Chart(barCtx, {
+          type: "bar",
+          data: {
+            labels: [
+              "Typhiod",
+              "Stroke",
+              "Diabetics",
+              "Cholerea",
+              "Tooth Decay",
+              "Fibroid",
+            ],
+            datasets: [
+              {
+                label: "Dataset",
+                data: [20, 40, 90, 10, 50, 80],
+                backgroundColor: [
+                  "green",
+                  "blue",
+                  "red",
+                  "yellow",
+                  "purple",
+                  "orange",
+                ],
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

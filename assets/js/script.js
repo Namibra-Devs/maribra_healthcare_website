@@ -284,3 +284,77 @@
   });
 
 })();
+
+// Graph--------------
+// Script to create the circular graph
+document.addEventListener('DOMContentLoaded', function () {
+  var ctxRed = document.getElementById('redGraph').getContext('2d');
+  var ctxGreen = document.getElementById('greenGraph').getContext('2d');
+  var ctxYellow = document.getElementById('yellowGraph').getContext('2d');
+
+  var redChart = new Chart(ctxRed, {
+    type: 'doughnut',
+    data: {
+      labels: ['Red', ''],
+      datasets: [{
+        data: [30, 70],
+        backgroundColor: ['#dc3545', 'rgba(0, 0, 0, 0)'],
+        borderWidth: 0,
+        rotation: -1.5 * Math.PI, // Start from the top
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '70%',
+      circumference: 1.5 * Math.PI, // Only render a quarter of the circle
+      rotation: Math.PI / 2, // Rotate to start from the top
+      maintainAspectRatio: false,
+      tooltips: { enabled: false },
+      hover: { mode: null }
+    }
+  });
+
+  var greenChart = new Chart(ctxGreen, {
+    type: 'doughnut',
+    data: {
+      labels: ['Green', ''],
+      datasets: [{
+        data: [40, 60],
+        backgroundColor: ['#28a745', 'rgba(0, 0, 0, 0)'],
+        borderWidth: 0,
+        rotation: -1.5 * Math.PI,
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '55%',
+      circumference: 1.5 * Math.PI,
+      rotation: Math.PI / 2,
+      maintainAspectRatio: false,
+      tooltips: { enabled: false },
+      hover: { mode: null }
+    }
+  });
+
+  var yellowChart = new Chart(ctxYellow, {
+    type: 'doughnut',
+    data: {
+      labels: ['Yellow', ''],
+      datasets: [{
+        data: [30, 70],
+        backgroundColor: ['#ffc107', 'rgba(0, 0, 0, 0)'],
+        borderWidth: 0,
+        rotation: -1.5 * Math.PI,
+      }]
+    },
+    options: {
+      responsive: true,
+      cutout: '40%',
+      circumference: 1.5 * Math.PI,
+      rotation: Math.PI / 2,
+      maintainAspectRatio: false,
+      tooltips: { enabled: false },
+      hover: { mode: null }
+    }
+  });
+});
