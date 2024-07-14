@@ -2288,12 +2288,23 @@ margin-left: 40px;
   margin-left: 10px;
 }
 .login-body{
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 77vh;
 }
 .login-form{
   border-radius: 4px;
   background: #F1F1F0;
   box-shadow: 0px 12px 26px 0px rgba(16, 30, 115, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+.d-flex.justify-content-between {
+  width: 100%;
 }
 .login-form h2{
   color: #04BC01;
@@ -2326,7 +2337,7 @@ font-weight: 400;
 line-height: 17px;
 letter-spacing: 0.5px;
 }
-.login-btn{
+.login-button {
   display: flex;
 width: 70%;
 height: 36px;
@@ -2340,9 +2351,10 @@ box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
 border: none;
 color: #fff;
 transition: 0.5s;
+
 }
 
-.login-form button:hover{
+.login-button:hover{
   color: #000;
   background: #89f18c;
   width: 60%;
@@ -2397,4 +2409,267 @@ font-size: 25px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+
+/* Dashboard Page-------------------------------------- */
+.sidebar {
+ 
+  color: #000;
+  height: 300vh; /* Adjust height as needed */
+  margin-top: 20px;
+  background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+
+
+
+.sidebar-links {
+  padding-left: 0;
+  
+}
+
+.sidebar-links .nav-item {
+  margin-bottom: 10px;
+  
+}
+.sidebar-links .nav-link{
+  color: #D2D2D2;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+transition: 0.5s;
+}
+.sidebar-links .nav-link:hover{
+  color: #000;
+  font-size: 24px;
+}
+.sidebar-links .nav-link.active {
+    color: #6ae13d !important; /* Change this to your desired active text color */
+}
+.sidebar-bottom {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  
+  
+}
+.sidebar-bottom .nav-link{
+  color: #D2D2D2;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+transition: 0.5s;
+}
+
+.sidebar-bottom .nav-link:hover{
+color: #000;
+font-size: 24px;
+}
+.sidebar-bottom .nav-link.active {
+    color: #6ae13d !important; /* Change this to your desired active text color */
+}
+.content {
+  padding: 20px;
+}
+.icons a {
+  margin-left: 5px;
+
+}
+
+.profile-img {
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+}
+
+/* Right Side------------------------- */
+.content{
+  background: #F1F1F0;
+}
+.form-control{
+  width: 200px;
+}
+.dashboard-cards{
+  gap: 25px;
+}
+.dashboard-card{
+  width: 210px;
+height: 100px;
+border-radius: 8px;
+border: 1px solid rgba(4, 188, 1, 0.25);
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+
+}
+
+.dashboard-card img{
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.card-texts{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.3px;
+margin-right: 10px;
+}
+
+
+/* First Graph Card-------------------------------- */
+.graph-card{
+  border-radius: 8px;
+border: 1px solid rgba(4, 188, 1, 0.25);
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.graph-head{
+  display: inline-flex;
+padding: 12px 20px 6px 13px;
+align-items: center;
+background: rgba(245, 245, 245, 0.67);
+}
+.graph-body h5, h6{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+.graph-body span{
+  color: #04BC01;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+.overlapping-images {
+  display: flex;
+}
+
+.overlapping-images img {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  margin-left: -14px; /* Adjust as needed for overlap */
+ 
+}
+.circular-graph-container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.graph-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.graph-details {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  margin-right: 40px;
+
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dot-green {
+  background-color: green;
+}
+
+.dot-yellow {
+  background-color: orange;
+}
+
+.dot-red {
+  background-color: black;
+}
+
+/* Calendar Section------------------------------- */
+.calendar-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.appointment-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.day-date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.appointment-card img {
+  height: 20px;
+  width: 20px;
+}
+
+.appointment-card .rounded-circle {
+  height: 24px;
+  width: 24px;
+}
+
+.appointment-card .accept,
+.appointment-card .decline {
+  height: 25px;
+  width: 25px;
+}
+
+/* Graphs Section---------------------------- */
+.graph-card {
+  padding: 20px;
+  margin: 20px 0;
+}
+.graph-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.graph-title span{
+  color: #04BC01;
+}
+.graph {
+  height: 300px;
+  max-height: 300px;
 }
