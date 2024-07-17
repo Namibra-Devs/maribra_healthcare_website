@@ -2515,7 +2515,12 @@ border-radius: 8px;
 border: 1px solid rgba(4, 188, 1, 0.25);
 background: #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s, box-shadow 0.3s; 
 
+}
+.dashboard-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 .dashboard-card img{
@@ -2753,4 +2758,150 @@ letter-spacing: 0.8px;
 .graph {
   height: 300px;
   max-height: 300px;
+}
+
+/* Appointments Dashboard---------------------------------------------------- */
+/* Side bar---------------- */
+.appointment-sidebar{
+  color: #000;
+  height: 210vh; /* Adjust height as needed */
+  margin-top: 20px;
+  background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-body h4{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+.recent-post-link{
+  margin-left: 100px; 
+}
+
+.recent-post a{
+  display: inline-flex;
+padding: 8px 13px;
+align-items: flex-start;
+gap: 8px;
+border-radius: 8px;
+background: #04BC01;
+color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+transition: 0.5s;
+text-decoration: none;
+}
+.recent-post a:hover{
+  color: #000;
+  background: #89f18c;
+  
+}
+.patient-name{
+  color: #242424;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+}
+.appointment-date{
+  overflow: hidden;
+color: #686868;
+text-overflow: ellipsis;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+gap: 10px;
+}
+.appointment-details{
+  color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.accept-close{
+  gap: 10px;
+}
+
+/* Appointment Schcedule Card Section---------------- */
+.vertical-line {
+  border-left: 3px solid #B3B3B3;
+  height: 270px;
+  position: absolute;
+  left: 39%;
+}
+.title-section span{
+  margin-left: 30px;
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.doctor-card h6{
+  color: #000;
+font-family: Inter;
+font-size: 17.171px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.687px;
+}
+.doctor-card p{
+  color: #000;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+/* Appointment Request Card------------------- */
+.custom-card {
+  background-color: #f8f9fa; /* Light gray background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.custom-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+.num{
+  color: #04BC01;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 280px;
+}
+
+/* Responsiveness for Appointment Dashboard----------------- */
+@media (max-width: 767.98px) {
+  .separator-line {
+      display: none;
+  }
+
+  .appointment-schedule-card .card-body {
+      flex-direction: column;
+  }
 }
