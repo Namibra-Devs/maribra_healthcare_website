@@ -2769,6 +2769,10 @@ letter-spacing: 0.8px;
   background: #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.patients-card{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  border: 1px solid #04BC01; 
+}
 .card-body h4{
   color: #000;
 font-family: Inter;
@@ -2837,6 +2841,10 @@ line-height: normal;
 }
 
 /* Appointment Schcedule Card Section---------------- */
+.appointment-schedule-card{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  border: 1px solid #04BC01;
+}
 .vertical-line {
   border-left: 3px solid #B3B3B3;
   height: 270px;
@@ -2873,6 +2881,10 @@ letter-spacing: 0.48px;
 }
 
 /* Appointment Request Card------------------- */
+.appointment-request-card{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  border: 1px solid #04BC01;
+}
 .custom-card {
   background-color: #f8f9fa; /* Light gray background color */
   border-radius: 10px; /* Rounded corners */
@@ -2904,4 +2916,110 @@ margin-left: 280px;
   .appointment-schedule-card .card-body {
       flex-direction: column;
   }
+}
+
+/* blogs Dashboard--------------------------- */
+/* Side Bar------------------------- */
+.blog-sidebar{
+  color: #000;
+  height: 185vh; /* Adjust height as needed */
+  margin-top: 20px;
+  background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+}
+.nutrition-card h4{
+  color: #04BC01;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.8px;
+
+  text-decoration: underline;
+}
+.blog-card-body p{
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+}
+.blog-card-body span{
+  color: rgba(0, 0, 0, 0.21);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+}
+.love-section {
+  font-size: 1rem;
+  color: #04bc01; /* Red color for love icon */
+}
+
+/* Write a blog section---------------------- */
+.write-blog-section{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  border: 1px solid #04BC01;
+}
+.write-blog-section label {
+  display: block;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-container .fa-toggle-on {
+  font-size: 40px; /* Adjust size as needed */
+  margin-right: 10px; /* Adjust spacing */
+}
+.toggle-container .fa-toggle-off {
+  font-size: 40px; /* Adjust size as needed */
+  margin-right: 10px; /* Adjust spacing */
+}
+.toggle-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.img-button{
+  margin-left: 30%;
+ gap: 20px;
+}
+.blog-btn{
+  margin-left: 15px;
+  display: flex;
+padding: 10px 35px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 25px;
+background: #04BC01;
+border: none;
+color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+transition: 0.5s;
+}
+.blog-btn:hover{
+  color: #000;
+  background: #89f18c;
 }
