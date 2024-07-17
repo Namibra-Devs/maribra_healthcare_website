@@ -66,7 +66,7 @@
                   />Doctors
                 </a>
               </li>
-              
+
               <li class="nav-item">
                 <a href="/pages/blogdashboard.html" class="nav-link">
                   <img
@@ -90,18 +90,56 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <img
-                    src="/assets/images/Logout Rounded.png"
-                    alt="logout"
-                    class="img-fluid"
-                  />Log Out
-                </a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn log-out-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                <img src="/assets/images/Logout Rounded.png" alt="" class="img-fluid">
+                  Log Out
+                </button>
               </li>
             </ul>
           </div>
         </div>
-
+        <!-- Logout-Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Loggin Out
+                </h1>
+                <a href=""></a>
+                
+              </div>
+              <div class="modal-body">
+                Are you sure you want to logout?</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="log-btn"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a href="/index.html" class="text-decoration-none">
+                  <button type="button" class="log-btn">
+                   Yes
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Right Content -->
         <div class="col-md-9 content justify-content-center dashboard">
           <div
@@ -146,7 +184,9 @@
               <div class="container">
                 <div class="dash-card row my-3 justify-content-center">
                   <div class="row dashboard-cards">
-                    <div class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div
+                      class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0"
+                    >
                       <p class="card-texts mt-4">75 <br />Appointments</p>
                       <img
                         src="/assets/images/Tear-Off Calendar (1).png"
@@ -154,15 +194,21 @@
                         alt="Card Image 1"
                       />
                     </div>
-                    <div class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0">
-                      <p class="card-texts mt-4">124,551 <br />Total Patients</p>
+                    <div
+                      class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0"
+                    >
+                      <p class="card-texts mt-4">
+                        124,551 <br />Total Patients
+                      </p>
                       <img
                         src="/assets/images/Out Patient Department.png"
                         class="img-fluid mt-4"
                         alt="Card Image 2"
                       />
                     </div>
-                    <div class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div
+                      class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0"
+                    >
                       <p class="card-texts mt-4">15 <br />Total Doctors</p>
                       <img
                         src="/assets/images/Lab Coat (1).png"
@@ -170,7 +216,9 @@
                         alt="Card Image 3"
                       />
                     </div>
-                    <div class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div
+                      class="dashboard-card d-flex col-md-6 col-lg-3 mb-3 mb-lg-0"
+                    >
                       <p class="card-texts mt-4">GHS 11,000 <br />Income</p>
                       <img
                         src="/assets/images/Card Wallet.png"
@@ -181,7 +229,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
             <!-- First Card -->
             <div class="container">
@@ -189,7 +236,7 @@
                 <div class="graph-body">
                   <h5 class="graph-title mt-2 mx-4">Patients Percentage</h5>
                   <div
-                    class="d-flex  justify-content-between align-items-center mt-3 graph-head"
+                    class="d-flex justify-content-between align-items-center mt-3 graph-head"
                   >
                     <div class="d-flex align-items-center">
                       <img

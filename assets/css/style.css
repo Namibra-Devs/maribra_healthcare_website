@@ -2482,10 +2482,45 @@ color: #000;
 font-size: 24px;
 }
 .sidebar-bottom .nav-link.active {
-    color: #6ae13d !important; /* Change this to your desired active text color */
+    color: #6ae13d !important; 
 }
 .content {
   padding: 20px;
+}
+/* Logout Modal------------------------ */
+.log-out-btn{
+  color: #D2D2D2;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  transition: 0.5s; 
+}
+.log-out-btn:hover{
+  color: #000;
+font-size: 24px;
+}
+.log-btn{
+  display: flex;
+  
+  height: 36px;
+  padding: 9px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #04BC01;
+  box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+  border: none;
+  color: #fff;
+  transition: 0.5s; 
+}
+.log-btn:hover{
+  color: #000;
+  background: #80eb83;
+  
 }
 .icons a {
   margin-left: 5px;
@@ -2916,6 +2951,9 @@ margin-left: 280px;
   .appointment-schedule-card .card-body {
       flex-direction: column;
   }
+  .num{
+    margin-left: 0;
+  }
 }
 
 /* blogs Dashboard--------------------------- */
@@ -3022,4 +3060,14 @@ transition: 0.5s;
 .blog-btn:hover{
   color: #000;
   background: #89f18c;
+}
+/* Resonsiveness for Blog Dashboard---------------  */
+@media (max-width: 767.98px) {
+  .blog-btn{
+    font-size: 16px;
+
+  }
+  .img-button{
+    margin-left: 0;
+  }
 }
