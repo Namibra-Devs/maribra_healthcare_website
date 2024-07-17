@@ -2913,6 +2913,9 @@ margin-left: 280px;
   .appointment-schedule-card .card-body {
       flex-direction: column;
   }
+  .num{
+    margin-left: 0;
+  }
 }
 
 /* blogs Dashboard--------------------------- */
@@ -3019,4 +3022,14 @@ transition: 0.5s;
 .blog-btn:hover{
   color: #000;
   background: #89f18c;
+}
+/* Resonsiveness for Blog Dashboard---------------  */
+@media (max-width: 767.98px) {
+  .blog-btn{
+    font-size: 16px;
+
+  }
+  .img-button{
+    margin-left: 0;
+  }
 }
