@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"
+    />
+    <title>Blogs Dashboard</title>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-md-3 blog-sidebar">
+          <div class="sidebar-header mb-5">
+            <img
+              src="/assets/images/logo.png"
+              alt="Company Logo"
+              class="img-fluid"
+              style="height: 50px"
+            />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">
+              MARIBRA HEALTHCARE <br />LIMITED.
+            </h5>
+          </div>
+          <div class="sidebar-links">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="/pages/dashboard.html" class="nav-link">
+                  <img
+                    src="/assets/images/Control Panel.png"
+                    alt="dashboard"
+                    class="img-fluid"
+                  />Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/pages/appointmentdashboard.html" class="nav-link">
+                  <img
+                    src="/assets/images/Tear-Off Calendar.png"
+                    alt="appointments"
+                    class="img-fluid"
+                  />Appointments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Lab Coat.png"
+                    alt="doctors"
+                    class="img-fluid"
+                  />Doctors
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/pages/blogdashboard.html" class="nav-link active">
+                  <img
+                    src="/assets/images/News.png"
+                    alt="blog"
+                    class="img-fluid"
+                  />Blogs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Settings.png"
+                    alt="settings"
+                    class="img-fluid"
+                  />Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Logout Rounded.png"
+                    alt="logout"
+                    class="img-fluid"
+                  />Log Out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9 content justify-content-center dashboard">
+          <div
+            class="dashboard-header d-flex justify-content-end align-items-center p-3"
+          >
+            <input
+              type="text"
+              class="form-control mr-3 mt-3"
+              placeholder="Search...."
+            />
+            <div class="icons text-decoration-none">
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18 (1).png"
+                  alt="Messages"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18.png"
+                  alt="Notifications"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Ellipse 17.png"
+                  alt="Profile"
+                  class="profile-img rounded-circle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-content p-4 graph-section">
+            <div
+              class="dashboard-title d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <h1>Hello Dr. Ernest</h1>
+                <h2>Welcome on board</h2>
+              </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row mt-4">
+              <div class="col-md-5">
+                <div class="card blogs-card mb-4">
+                  <div class="card-body">
+                    <h4 class="card-title">Uploaded Blogs</h4>
+                    <div class="recent-post d-flex my-3 ml-auto">
+                      <a
+                        href="#"
+                        class="recent-post-link d-flex align-items-center"
+                      >
+                        <span>Recent Post</span>
+                        <img
+                          src="/assets/images/recent.png"
+                          alt="Recent Post"
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                    <div class="nutrition-card mb-1">
+                      <h4 class="blog-card-header">Nutrition Tips</h4>
+                      <div class="blog-card-body">
+                        <p>
+                          Good nutrition is an important part of leading a
+                          healthy lifestyle. Combined with physical activity,
+                          your diet can help you to reach and maintain a healthy
+                          weight, reduce your risk of chronic diseases (like
+                          heart disease and cancer), and promote your overall
+                          health.
+                        </p>
+                        <span class="additional-text"
+                          >Remember to eat a variety of foods to ensure you get
+                          all the necessary nutrients.</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="text-card p-2 mb-1 d-flex justify-content-between align-items-center"
+                    >
+                      <span class="time-text">3 days ago</span>
+                      <div class="love-section d-flex align-items-center">
+                        <i class="fa fa-heart love-icon" aria-hidden="true"></i>
+                        <span class="love-count">(12)</span>
+                      </div>
+                    </div>
+                    <div class="garlic-card text-center p-1 mb-1">
+                      <img
+                        src="/assets/images/garlic.png"
+                        alt="Garlic"
+                        class="garlic-img img-fluid mx-auto"
+                      />
+                      <div class="blog-card-body">
+                        <p class="mt-1">
+                          Garlic is a species in the onion genus, Allium. Its
+                          close relatives include the onion, shallot, leek,
+                          chive, and Chinese onion.
+                        </p>
+                        <span class="garlic-fact"
+                          >Garlic can help reduce blood pressure.</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="text-card p-2 mb-1 d-flex justify-content-between align-items-center"
+                    >
+                      <span class="time-text">3 days ago</span>
+                      <div class="love-section d-flex align-items-center">
+                        <i class="fa fa-heart love-icon" aria-hidden="true"></i>
+                        <span class="love-count">(12)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card write-blog-section p-2">
+                  <h3 class="section-title mb-4 p-3">Write a Blog</h3>
+                  <form>
+                    <div class="form-row row blog-title-time px-5">
+                      <div class="col-md-6 mb-3">
+                        <label for="blogTitle">Blog Title</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="blogTitle"
+                          placeholder="Add Title..."
+                        />
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="blogTime">Time</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="blogTime"
+                          placeholder="Add Time..."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 p-3">
+                      <div class="form-group">
+                        <label for="blogDescription" class="border-bottom"
+                          >Description</label
+                        >
+                        <textarea
+                          class="form-control border-bottom"
+                          id="blogDescription"
+                          rows="6"
+                          placeholder="Add description..."
+                          style="width: 100%"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 p-3">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control border-bottom"
+                          id="blogDate"
+                          placeholder="dd/mm/yy"
+                          style="width: 50%"
+                        />
+                      </div>
+                    </div>
+                    <div class="toggle-container p-3">
+                      <i class="fa fa-toggle-on text-success"></i>
+                      <span class="toggle-text">Featured blog</span>
+                    </div>
+                    <div class="toggle-container p-3">
+                      <i class="fa fa-toggle-off text-danger"></i>
+                      <span class="toggle-text">Add to Recent blog</span>
+                    </div>
+                    <!-- Add more form fields as needed -->
+                    <div class="img-button d-flex mb-3">
+                      <img src="/assets/images/Vector.png" alt="" /><button
+                        class="blog-btn"
+                        type="submit"
+                      >
+                      Add blog
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Write a blog card------------------------------ -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!-- calendar Script----------- -->
+  </body>
+</html>
