@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"
+    />
+    <title>Appointment Dashboard</title>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-md-3 appointment-sidebar">
+          <div class="sidebar-header mb-5">
+            <img
+              src="/assets/images/logo.png"
+              alt="Company Logo"
+              class="img-fluid"
+              style="height: 50px"
+            />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">
+              MARIBRA HEALTHCARE <br />LIMITED.
+            </h5>
+          </div>
+          <div class="sidebar-links">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="/pages/dashboard.html" class="nav-link">
+                  <img
+                    src="/assets/images/Control Panel.png"
+                    alt="dashboard"
+                    class="img-fluid"
+                  />Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/pages/appointmentdashboard.html"
+                  class="nav-link active"
+                >
+                  <img
+                    src="/assets/images/Tear-Off Calendar.png"
+                    alt="appointments"
+                    class="img-fluid"
+                  />Appointments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Lab Coat.png"
+                    alt="doctors"
+                    class="img-fluid"
+                  />Doctors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Group Message.png"
+                    alt="messages"
+                    class="img-fluid"
+                  />Messages
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/News.png"
+                    alt="blog"
+                    class="img-fluid"
+                  />Blogs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Settings.png"
+                    alt="settings"
+                    class="img-fluid"
+                  />Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img
+                    src="/assets/images/Logout Rounded.png"
+                    alt="logout"
+                    class="img-fluid"
+                  />Log Out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9 content justify-content-center dashboard">
+          <div
+            class="dashboard-header d-flex justify-content-end align-items-center p-3"
+          >
+            <input
+              type="text"
+              class="form-control mr-3 mt-3"
+              placeholder="Search...."
+            />
+            <div class="icons text-decoration-none">
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18 (1).png"
+                  alt="Messages"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Group 18.png"
+                  alt="Notifications"
+                  class="mr-2"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/images/Ellipse 17.png"
+                  alt="Profile"
+                  class="profile-img rounded-circle"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-content p-4 graph-section">
+            <div
+              class="dashboard-title d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <h1>Hello Dr. Ernest</h1>
+                <h2>Welcome on board</h2>
+              </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <div class="card patients-card mb-4">
+                  <div class="card-body">
+                    <h4 class="card-title">Patients</h4>
+                    <div class="recent-post d-flex my-3 ml-auto">
+                      <a
+                        href="#"
+                        class="recent-post-link d-flex align-items-center"
+                      >
+                        <span>Recent Post</span>
+                        <img
+                          src="/assets/images/recent.png"
+                          alt="Recent Post"
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                    <div class="card-body-1 d-flex mt-2">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">John Doe</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 15</span>
+                          </div>
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>10:00 AM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="card-body-1 d-flex mt-4">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">Amadu Aziz</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 19</span>
+                          </div>
+                          <div class="">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>10:00 AM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="card-body-1 d-flex mt-4">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">Robert Brown</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 22</span>
+                          </div>
+                          <div class="">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>12:30 PM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="card-body-1 d-flex mt-4">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">Jane Smith</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 25</span>
+                          </div>
+                          <div class="">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>10:50 AM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="card-body-1 d-flex mt-4">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">Smith Kweku</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 25</span>
+                          </div>
+                          <div class="">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>10:50 AM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="card-body-1 d-flex mt-4">
+                      <img
+                        src="/assets/images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-img"
+                      />
+                      <div>
+                        <h5 class="patient-name">Nana Atu</h5>
+                        <div class="appointment-date d-flex mb-1">
+                          <div class="align-items-center">
+                            <img
+                              src="/assets/images/uil_calender.png"
+                              alt="Calendar"
+                              class="img-fluid"
+                            />
+                            <span>July 25</span>
+                          </div>
+                          <div class="">
+                            <img
+                              src="/assets/images/ri_time-line.png"
+                              alt="Clock"
+                              class="img-fluid"
+                            />
+                            <span>11:50 AM</span>
+                          </div>
+                        </div>
+
+                        <p class="appointment-details">
+                          Appointment Type: Online <br />
+                          Symptoms: Fever, Cough
+                        </p>
+                      </div>
+                      <div class="accept-close d-flex mt-2">
+                        <a href=""
+                          ><img
+                            src="/assets/images/carbon_close.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                        <a href=""
+                          ><img
+                            src="/assets/images/accept-medium.png"
+                            alt=""
+                            class="img-fluid"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Appointment Schedule Card---------------------- -->
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="card appointment-schedule-card">
+                      <div class="card-body d-flex">
+                        <!-- Calendar -->
+                        <div class="calendar-section col-md-4">
+                          <div class="title-section">
+                            <h4>Appointment Schedule</h4>
+                          </div>
+                          <div id="calendar"></div>
+                        </div>
+                        <!-- Separator -->
+                        <div class="separator-line col-md-1">
+                          <hr class="vertical-line" />
+                        </div>
+                        <!-- Appointment Details -->
+                        <div class="appointment-details col-md-7">
+                          <div class="title-section mb-4">
+                            <h4
+                              class="card-title d-flex justify-content-between"
+                            >
+                              Available Doctors
+                              <span>5</span>
+                            </h4>
+                          </div>
+                          <!-- Doctor Details -->
+                          <div class="doctor-details">
+                            <div class="doctor-card mb-2">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h6>Dr. Richard Donkor</h6>
+                                  <p>Physician</p>
+                                </div>
+                                <div class="d-flex">
+                                  <p>18:00am-10:30am</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="doctor-card mb-2">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h6>Dr. Jane Smith</h6>
+                                  <p>Neurology</p>
+                                </div>
+                                <div>
+                                  <p>11:00 AM-12:00 PM</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="doctor-card mb-2">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h6>Dr. Robert Brown</h6>
+                                  <p>Pediatrics</p>
+                                </div>
+                                <div>
+                                  <p>12:00 PM-01:00 PM</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="doctor-card mb-2">
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h6>Dr. kojo Twum</h6>
+                                  <p>Dermatology</p>
+                                </div>
+                                <div>
+                                  <p>01:00 PM-02:00 PM</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <!-- Appointment Request Card------------------- -->
+                    <div class="card appointment-request-card">
+                      <div class="card-body align-items-center">
+                        <h5 class="card-title mb-3">
+                          Appointment Requests
+                          <span class="num">(8 patients)</span>
+                        </h5>
+                        <div class="container mt-4">
+                            <div class="row">
+                                <!-- First Card -->
+                                <div class="col-12 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-body d-flex align-items-center">
+                                           
+                                            <div class="flex-grow-1">
+                                                 <img src="/assets/images/portrait.png" alt="Profile" class="img-fluid mr-3">
+                                                <h5 class="card-title mb-0">Nana Ato Ato</h5>
+                                                <p class="mb-0">Stomach pains</p>
+                                            </div>
+                                            <div class="d-flex align-items-center ml-auto">
+                                                <img src="/assets/images/ri_time-line.png" alt="Clock" class="img-fluid mr-2">
+                                                <span>8:20 AM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Second Card -->
+                                <div class="col-12 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-body d-flex align-items-center">
+                                            
+                                            <div class="flex-grow-1">
+                                                <img src="/assets/images/portrait.png" alt="Profile" class="img-fluid mr-3">
+                                                <h5 class="card-title mb-0">Nana Ato Ato</h5>
+                                                <p class="mb-0">Headache</p>
+                                            </div>
+                                            <div class="d-flex align-items-center ml-auto">
+                                                <img src="/assets/images/ri_time-line.png" alt="Clock" class="img-fluid mr-2">
+                                                <span>9:30 AM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Third Card -->
+                                <div class="col-12 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-body d-flex align-items-center">
+                                            
+                                            <div class="flex-grow-1">
+                                                <img src="/assets/images/portrait.png" alt="Profile" class="img-fluid mr-3">
+                                                <h5 class="card-title mb-0">Kojo Baako</h5>
+                                                <p class="mb-0">Fever</p>
+                                            </div>
+                                            <div class="d-flex align-items-center ml-auto">
+                                                <img src="/assets/images/ri_time-line.png" alt="Clock" class="img-fluid mr-2">
+                                                <span>10:00 AM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <!-- calendar Script----------- -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+        });
+        calendar.render();
+      });
+    </script>
+  </body>
+</html>
