@@ -2565,7 +2565,9 @@ transition: 0.5s;
     position: fixed;
   }
   .content{
+    position: relative;
     margin-top: 40px;
+    z-index: -1;
   }
    
   .dashboard-heading h5{
