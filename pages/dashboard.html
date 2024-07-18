@@ -22,21 +22,35 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
+    <!-- Burgar Nav----------------- -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Burger Menu -->
+        <div class="burger-menu" onclick="toggleBurgerMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="burger-menu-content" id="burgerMenuContent">
+          <div class="burger-menu-header">
+            <!-- <img src="/assets/images/logo.png" alt="Company Logo" class="img-fluid" style="height: 50px" />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">MARIBRA HEALTHCARE <br />LIMITED.</h5> -->
+          </div>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-3"><a href="/pages/dashboard.html" class="nav-link active" onclick="toggleBurgerMenu()">Dashboard</a></li>
+            <li class="nav-item mb-3"><a href="/pages/appointmentdashboard.html" class="nav-link" onclick="toggleBurgerMenu()">Appointments</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link" onclick="toggleBurgerMenu()">Doctors</a></li>
+            <li class="nav-item mb-3"><a href="/pages/blogdashboard.html" class="nav-link" onclick="toggleBurgerMenu()">Blogs</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link" onclick="toggleBurgerMenu()">Settings</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link" onclick="showLogoutModal(); toggleBurgerMenu()">Log Out</a></li>
+          </ul>
+        </div>
+
+
+
     <div class="container-fluid">
       <div class="row">
         <!-- Left Sidebar -->
         <div class="col-md-3 sidebar">
-          <div class="sidebar-header mb-5">
-            <img
-              src="/assets/images/logo.png"
-              alt="Company Logo"
-              class="img-fluid"
-              style="height: 50px"
-            />
-            <h5 class="d-inline-block align-middle ml-2 mb-0">
-              MARIBRA HEALTHCARE <br />LIMITED.
-            </h5>
-          </div>
+          
           <div class="sidebar-links">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -141,16 +155,27 @@
           </div>
         </div>
         <!-- Right Content -->
-        <div class="col-md-9 content justify-content-center dashboard">
+        
           <div
-            class="dashboard-header d-flex justify-content-end align-items-center p-3"
+            class="dashboard-header d-flex justify-content-end align-items-center p-2"
           >
+          <div class="dashboard-heading d-flex">
+            <img
+              src="/assets/images/logo.png"
+              alt="Company Logo"
+              class="img-fluid"
+              style="height: 40px"
+            />
+            <h5 class="">
+              MARIBRA HEALTHCARE <br />LIMITED.
+            </h5>
+          </div>
             <input
               type="text"
-              class="form-control mr-3 mt-3"
+              class="form-control mt-3" id="header-input"
               placeholder="Search...."
             />
-            <div class="icons text-decoration-none">
+            <div class="icons text-decoration-none mr-3>
               <a href="#">
                 <img
                   src="/assets/images/Group 18 (1).png"
@@ -173,7 +198,9 @@
                 />
               </a>
             </div>
+            
           </div>
+       <div class="col-md-9 content justify-content-center">
           <div class="main-content p-4 graph-section">
             <div class="dashboard-title">
               <h1>Hello Dr. Ernest</h1>
@@ -609,6 +636,16 @@
           },
         });
       });
+      // Script For Burger Nav
+      function showLogoutModal() {
+      var logoutModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      logoutModal.show();
+    }
+
+    function toggleBurgerMenu() {
+      var burgerMenuContent = document.getElementById('burgerMenuContent');
+      burgerMenuContent.classList.toggle('show');
+    }
     </script>
   </body>
 </html>
