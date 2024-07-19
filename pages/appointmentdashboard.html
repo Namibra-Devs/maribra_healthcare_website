@@ -535,7 +535,7 @@
                         </div>
                         <!-- Appointment Details -->
                         <div class="appointment-details col-md-7">
-                          <div class="title-section mb-4">
+                          <div class="title-section mb-4 mt-5">
                             <h4
                               class="card-title d-flex justify-content-between"
                             >
@@ -673,16 +673,41 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js
+"></script>
 
     <!-- calendar Script----------- -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
         var calendarEl = document.getElementById("calendar");
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: "dayGridMonth",
+          headerToolbar: {
+            left: "prev",
+            center: "",
+            right: "next",
+          },
+          events: [
+            // Add your events here
+            {
+              title: "Appointment 1",
+              start: "2024-07-12T09:00:00",
+              end: "2024-07-12T10:00:00",
+            },
+            {
+              title: "Appointment 2",
+              start: "2024-07-13T11:00:00",
+              end: "2024-07-13T12:00:00",
+            },
+            {
+              title: "Appointment 3",
+              start: "2024-07-14T14:00:00",
+              end: "2024-07-14T15:00:00",
+            },
+          ],
         });
         calendar.render();
-      });
+      
 
       // Script For Burger Nav
       function showLogoutModal() {
