@@ -1839,18 +1839,17 @@ transition: 0.5s;
 @media (max-width: 995px) {
   .navbar {
     width: 90vw; /* Full viewport width */
-    
+    margin-right: 20px;
  
     background-color: transparent; /* Remove green background */
    
   }
-
+  
   .navbar-collapse {
     background-color: #fff; /* Background color for collapsed navbar */
-   padding: 20px 0px;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
-    width: 90%;
-    margin-right: 60px;
   }
 
   .navbar-toggler {
@@ -1869,7 +1868,17 @@ transition: 0.5s;
    
 
   }
+#staff{
+  /* border: solid 1px #6AE13D; */
+  margin-top: 30px;
+  background: #000;
+  color: #fff;
+}
+#staff:hover{
+  background: #fff;
+  color: #6AE13D;
 
+}
   .navbar-nav .nav-link.active {
     background-color: transparent; /* Remove green background */
     color: green; /* Active link color */
