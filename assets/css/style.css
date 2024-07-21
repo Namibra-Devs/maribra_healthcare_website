@@ -2575,11 +2575,16 @@ transition: 0.5s;
   .dashboard-header{
     gap: 0;
     position: fixed;
+    z-index: 999; /* High z-index for the dashboard header, but less than burger menu */
+    width: 100%; /* Ensure it takes the full width */
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
   }
   .content{
-    position: relative;
-    margin-top: 40px;
-    z-index: -1;
+    
+    margin-top: 60px;
+    
   }
    
   .dashboard-heading h5{
@@ -2590,6 +2595,8 @@ transition: 0.5s;
   .dashboard-heading img{
     margin-right: 5px;
   }
+ 
+  
 }
 
 /* Logout Modal------------------------ */
@@ -3126,6 +3133,14 @@ letter-spacing: 0.56px;
 .love-section {
   font-size: 1rem;
   color: #04bc01; /* Red color for love icon */
+}
+.garlic-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3, box-shadow 0.3s; 
+}
+.garlic-img:hover{
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /* Write a blog section---------------------- */
