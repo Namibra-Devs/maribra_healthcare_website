@@ -79,7 +79,7 @@ body, html {
   line-height: normal;
   letter-spacing: 0.48px;
 }
-.logo .btn {
+.main-logo .btn {
   display: flex;
   padding: 10px 22px;
   justify-content: center;
@@ -99,7 +99,7 @@ text-decoration: none;
 .logo-book a{
   text-decoration: none;
 }
-.logo .btn:hover {
+.main-logo .btn:hover {
   background: #6ae13d;
 }
 
@@ -1843,9 +1843,11 @@ transition: 0.5s;
 }
 
 /* Ensure the burger menu is shown only on smaller screens */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .main-burger-menu {
     display: block;
+    margin-top: 5px;
+    margin-left: 5px;
   }
 
  
@@ -1867,7 +1869,8 @@ transition: 0.5s;
 
   }
   .logo-left{
-    margin-left: 400px !important;
+    margin-left: 100% !important;
+    font-size: 14px !important;
   }
   .hero{
     
