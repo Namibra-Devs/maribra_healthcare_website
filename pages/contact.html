@@ -72,7 +72,7 @@
     <section class="title">
       <div class="container">
         <div class="row">
-          <div class="logo d-flex">
+          <div class="main-logo d-flex">
             <div class="logo-left d-flex align-items-center">
               <div class="logo-img">
                 <img src="../assets/images/logo.png" class="img-fluid" alt="" />
@@ -81,7 +81,7 @@
             </div>
             <div class="logo-book">
               <a href="/pages/appointment.html"><button class="btn" type="button">Book Appointment</button></a>
-              
+  
             </div>
           </div>
         </div>
@@ -108,8 +108,33 @@
           </div>
         </div>
       </nav>
-      
     </div>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Burger Menu -->
+          <div class="main-burger-menu" onclick="toggleBurgerMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="main-burger-menu-content" id="burgerMenuContent">
+            <div class="burger-menu-header">
+              <!-- <img src="/assets/images/logo.png" alt="Company Logo" class="img-fluid" style="height: 50px" />
+              <h5 class="d-inline-block align-middle ml-2 mb-0">MARIBRA HEALTHCARE <br />LIMITED.</h5> -->
+            </div>
+            <ul class="nav flex-column mt-5">
+              <li class="nav-item mb-3"><a href="/index.html" class="nav-link" onclick="toggleBurgerMenu()">Home</a></li>
+              <li class="nav-item mb-3"><a href="/pages/aboutus.html" class="nav-link" onclick="toggleBurgerMenu()">About Us</a></li>
+              <li class="nav-item mb-3"><a href="/pages/services.html" class="nav-link" onclick="toggleBurgerMenu()">Our Services</a></li>
+              <li class="nav-item mb-3"><a href="/pages/blog.html" class="nav-link" onclick="toggleBurgerMenu()">Blog</a></li>
+              <li class="nav-item mb-3"><a href="/pages/contact.html" class="nav-link active" onclick="toggleBurgerMenu()">Contact Us</a></li>
+              <li class="nav-item mb-3"><a href="/pages/login.html" class="nav-link" onclick="toggleBurgerMenu()">Staff Login</a></li>
+              
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+      
+    
     <!-- Hero Section with Background Image -->
     <section class="about-home">
       <div class="abouts_us">
@@ -337,5 +362,18 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/popper/popper.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
+
+    <script>
+      // Script For Burger Nav
+      function showLogoutModal() {
+       var logoutModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+       logoutModal.show();
+     }
+ 
+     function toggleBurgerMenu() {
+       var burgerMenuContent = document.getElementById('burgerMenuContent');
+       burgerMenuContent.classList.toggle('show');
+     }
+   </script>
   </body>
 </html>

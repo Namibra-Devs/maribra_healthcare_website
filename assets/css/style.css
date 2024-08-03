@@ -59,7 +59,7 @@ body, html {
 }
 
 /* Logo Section----------- */
-.logo {
+.main-logo {
  justify-content: right;
   padding: 20px 0px;
 }
@@ -1790,6 +1790,93 @@ transition: 0.5s;
   .header {
     display: none;
   }
+  
+}
+/* Main Burger Menu */
+.main-burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+   z-index: 1001;
+}
+
+.main-burger-menu-content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  z-index: 1000;
+  transition: left 0.7s ease-in-out;
+  overflow-y: auto;
+  padding: 20px;
+  
+}
+
+.main-burger-menu-content.show {
+  left: 0;
+}
+
+
+.main-burger-menu-content .nav-link{
+  color: #000;
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+transition: 0.5s;
+}
+
+.main-burger-menu-content .nav-link.active{
+  color: #04BC01 !important;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Ensure the burger menu is shown only on smaller screens */
+@media (max-width: 992px) {
+  .main-burger-menu {
+    display: block;
+  }
+
+ 
+  .icons{
+    display: none;
+  }
+  #header-input{
+    display: none;
+  }
+  .main-logo{
+    gap: 0;
+    position: fixed;
+    z-index: 999; /* High z-index for the dashboard header, but less than burger menu */
+    width: 100%; /* Ensure it takes the full width */
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+    background: #fff;
+
+  }
+  .logo-left{
+    margin-left: 400px !important;
+  }
+  .hero{
+    
+    margin-top: 60px;
+    
+  }
+   
+ 
+  
 }
 
 /* Logo Section--------------------- */
@@ -1838,51 +1925,17 @@ transition: 0.5s;
 /* Navbar Section--------------------------------- */
 @media (max-width: 995px) {
   .navbar {
-    width: 90vw; /* Full viewport width */
-    margin-right: 20px;
- 
-    background-color: transparent; /* Remove green background */
+    
+    display: none;
    
   }
   
-  .navbar-collapse {
-    background-color: #fff; /* Background color for collapsed navbar */
-   padding: 20px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-  }
-
-  .navbar-toggler {
-    border-color: transparent; /* Remove border color from the burger icon */
-    margin-left: 85%;
-    margin-top: -160px;
-  }
+  
 
 
 
-  .navbar-nav .nav-link {
-    color: #333; /* Text color of links when collapsed */
-    border: none; /* Remove borders from nav-links */
-    margin-right: 0; /* Reset margin for mobile */
-    text-align: right; /* Align text to left */
-   
+ 
 
-  }
-#staff{
-  /* border: solid 1px #6AE13D; */
-  margin-top: 30px;
-  background: #000;
-  color: #fff;
-}
-#staff:hover{
-  background: #fff;
-  color: #6AE13D;
-
-}
-  .navbar-nav .nav-link.active {
-    background-color: transparent; /* Remove green background */
-    color: green; /* Active link color */
-  }
  
 }
 
