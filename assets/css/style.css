@@ -1871,13 +1871,20 @@ transition: 0.5s;
   .logo-left{
     margin-left: 100% !important;
     font-size: 14px !important;
+    margin-bottom: 5px;
   }
   .hero{
     
     margin-top: 60px;
-    
-  }
-   
+      }
+   .logo-text{
+        font-size: 16px !important;
+        
+        margin-right: 15px;
+      }
+      .logo-left img{
+        margin-right: 5px;
+      }
  
   
 }
