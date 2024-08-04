@@ -2318,6 +2318,13 @@ transition: 0.5s;
   .contact-us{
     margin-top: -70px;
   }
+  .address-card{
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .map{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 
 
@@ -3364,7 +3371,7 @@ form button:hover {
     font-size: 20px;
   }
   .settings-container {
-    width: 70%;
+    width: 100%;
     margin: auto;
     
     padding: 10px;
