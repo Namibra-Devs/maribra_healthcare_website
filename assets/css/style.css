@@ -3279,4 +3279,114 @@ transition: 0.5s;
   }
 }
 
-/* Trial On navar-------------------------------------- */
+/* Settings Page-------------------------------------- */
+.settings-container {
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.settings-section h2 {
+  border-bottom: 1px solid #6ae13d;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+    align-items: flex-start; /* Aligning form elements to the left */
+}
+form label.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+form label.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+form label {
+  margin-bottom: 10px;
+ 
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+}
+
+form button {
+  padding: 10px 20px;
+  background: #6ae13d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50%;
+}
+
+form button:hover {
+  background: #8bf166;
+  color: #000;
+}
+
+.exit-button{
+  padding: 10px 20px;
+  background: #6ae13d;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50%;
+}
+.exit-button:hover{
+  background: #8bf166;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+
+  .settings-section h2{
+    font-size: 20px;
+  }
+  .settings-container {
+    width: 70%;
+    margin: auto;
+    
+    padding: 10px;
+  }
+  form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+}
+form button {
+  padding: 5px 10px;
+  background: #6ae13d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 60%;
+}
+}

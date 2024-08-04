@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css" />
+  <title>Settings</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="settings-container p-5">
+      <h1>Settings</h1>
+
+      <div class="settings-section">
+          <h2>User Information</h2>
+          <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone">
+              <button type="submit">Save</button>
+          </form>
+      </div>
+
+      <div class="settings-section mt-3">
+          <h2>Notification Settings</h2>
+          <form>
+            <label class="checkbox-label">
+                <input type="checkbox" name="email_notifications"> Email Notifications
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="sms_notifications"> SMS Notifications
+            </label>
+            <button type="submit">Save</button>
+        </form>
+      </div>
+
+      <div class="settings-section">
+          <h2>Change Password</h2>
+          <form>
+              <label for="current_password">Current Password:</label>
+              <input type="password" id="current_password" name="current_password">
+              <label for="new_password">New Password:</label>
+              <input type="password" id="new_password" name="new_password">
+              <label for="confirm_password">Confirm New Password:</label>
+              <input type="password" id="confirm_password" name="confirm_password">
+              <button type="submit">Change Password</button>
+          </form>
+      </div>
+
+      <!-- Exit Button -->
+      <button class="exit-button" onclick="exitSettings()">Exit</button>
+  </div>
+
+  <script>
+    function exitSettings() {
+        // You can implement your own exit functionality here
+        window.location.href = '/pages/dashboard.html'; // Example redirect to a dashboard page
+    }
+</script>
+</body>
+</html>
