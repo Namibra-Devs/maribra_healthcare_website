@@ -174,7 +174,7 @@ text-decoration: none;
   left: 0;
   width: 100%;
   height: 107%;
-  background: url("../images/home\ 2.avif");
+  background: url("../images/lab.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1215,7 +1215,7 @@ margin-left: 42%;
   left: 0;
   width: 100%;
   height: 564px;
-  background-image: url("../images/services-home.jpg");
+  background-image: url("../images/home\ 2.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1269,8 +1269,11 @@ letter-spacing: 1.2px;
 }
 
 @media (max-width: 998px){
-  .our_service{
-    height: 120% !important;
+ 
+  .service-box{
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-top: 60px;
   }
 }
 /* Services Info Section-------------------- */
@@ -1293,6 +1296,13 @@ letter-spacing: 1.2px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: transparent;
 }
+.tab-imag {
+  align-items: center; 
+ 
+}
+
+
+
 
 /* Blogs Section----------------- */
 
@@ -2417,7 +2427,7 @@ transition: 0.5s;
 @media only screen and (max-width: 995px) {
   .service-text h4{
     font-size: 30px;
-    margin-top: -140PX;
+    margin-top: -160PX;
   }
   .service-text p{
     font-size: 20;
