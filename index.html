@@ -33,7 +33,7 @@
               <i class="fa fa-map-marker contact-icon"></i>
               <div class="contact-text">
                 <p>Visit us</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <p>MARIBRA HEALTHCARE</p>
               </div>
             </div>
             <div class="contacts d-flex align-items-center">
@@ -73,24 +73,31 @@
   <section class="title">
     <div class="container">
       <div class="row">
-        <div class="logo d-flex">
-          <div class="logo-left d-flex align-items-center">
-            <div class="logo-img">
-              <img src="../assets/images/logo.png" class="img-fluid" alt="" />
-            </div>
-            <div class="logo-text">MARIBRA HEALTHCARE LIMITED.</div>
+        <div
+            class="dashboard-header d-flex justify-content-end align-items-center p-2"
+          >
+          <div class="dashboard-heading d-flex">
+            <img
+              src="/assets/images/logo.png"
+              alt="Company Logo"
+              class="img-fluid"
+              style="height: 40px"
+            />
+            <h5 class="">
+              MARIBRA HEALTHCARE <br />LIMITED.
+            </h5>
           </div>
           <div class="logo-book">
             <a href="/pages/appointment.html"><button class="btn" type="button">Book Appointment</button></a>
 
           </div>
-        </div>
+        
       </div>
     </div>
   </section>
 
     <!-- Navbar Section -->
-    <div class="container">
+    <div class="container ">
       <nav class="navbar navbar-expand-md justify-content-center">
         <div class="container-fluid">
           
@@ -98,18 +105,43 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav align-items-center">
               <a class="nav-link active" href="index.html">Home</a>
               <a class="nav-link" href="/pages/aboutus.html">About us</a>
               <a class="nav-link" href="/pages/services.html">Our Services</a>
               <a class="nav-link" href="/pages/blog.html">Blog</a>
               <a class="nav-link" href="/pages/contact.html">Contact us</a>
-              
+              <a class="nav-link" id="staff" href="/pages/login.html">Staff Login</a>
+             
             </div>
           </div>
         </div>
       </nav>
       
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Burger Menu -->
+        <div class="main-burger-menu" onclick="toggleBurgerMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="main-burger-menu-content" id="burgerMenuContent">
+          <div class="burger-menu-header">
+            <!-- <img src="/assets/images/logo.png" alt="Company Logo" class="img-fluid" style="height: 50px" />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">MARIBRA HEALTHCARE <br />LIMITED.</h5> -->
+          </div>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-3"><a href="/index.html" class="nav-link active" onclick="toggleBurgerMenu()">Home</a></li>
+            <li class="nav-item mb-3"><a href="/pages/aboutus.html" class="nav-link" onclick="toggleBurgerMenu()">About Us</a></li>
+            <li class="nav-item mb-3"><a href="/pages/services.html" class="nav-link" onclick="toggleBurgerMenu()">Our Services</a></li>
+            <li class="nav-item mb-3"><a href="/pages/blog.html" class="nav-link" onclick="toggleBurgerMenu()">Blog</a></li>
+            <li class="nav-item mb-3"><a href="/pages/contact.html" class="nav-link" onclick="toggleBurgerMenu()">Contact Us</a></li>
+            <li class="nav-item mb-3"><a href="/pages/login.html" class="nav-link" onclick="toggleBurgerMenu()">Staff Login</a></li>
+            
+          </ul>
+        </div>
+
+      </div>
     </div>
 
   <!-- Hero Section with Background Image -->
@@ -148,12 +180,12 @@
           <div class="about-images">
             <div class="left-column">
               <div class="stacked-images">
-                <img src="../assets/images/about-1.png" class="img-fluid" alt="Image 1" id="image1" />
-                <img src="../assets/images/about-2.png" class="img-fluid" alt="Image 2" id="image2" />
+                <img src="../assets/images/about2.jpg" class="img-fluid" alt="Image 1" id="image1" />
+                <img src="../assets/images/about1.jpg" class="img-fluid" alt="Image 2" id="image2" />
               </div>
             </div>
             <div class="right-column">
-              <img src="../assets/images/about-3.png" class="img-fluid" alt="Image 3" id="image3" />
+              <img src="../assets/images/doc.jpg" class="img-fluid" alt="Image 3" id="image3" />
             </div>
           </div>
           <div class="about-texts">
@@ -232,11 +264,9 @@
   
                   <dgit iv class="service-content">
                     <div class="service-title">
-                      <h2>Laboratory Section</h2>
+                      <h2>General Medicine</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt aliquam vitae eum at
-                      perferendis a magni quidem est in atque aut, perspiciatis quia quam, quaerat ducimus, officiis neque
-                      natus.</p>
+                    <p>Our general medicine team focuses on preventive care, diagnosis, and treatment of a wide variety of medical conditions. Whether it’s a routine check-up or managing chronic illnesses, we’re here to guide you toward optimal health.</p>
                   </dgit>
                 </div>
               </div>
@@ -247,11 +277,9 @@
                 <div class="service-item">
                   <div class="service-content">
                     <div class="service-title">
-                      <h2>Laboratory Section</h2>
+                      <h2>Diagnostic Services</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt aliquam vitae eum at
-                      perferendis a magni quidem est in atque aut, perspiciatis quia quam, quaerat ducimus, officiis neque
-                      natus.</p>
+                    <p>Accurate and timely diagnosis is the cornerstone of effective treatment. We offer state-of-the-art diagnostic services, including imaging and advanced testing, to help pinpoint and address health concerns efficiently.</p>
                   </div>
                     <img src="./assets/images/down-text.png" alt="" class="img-fluid">
   
@@ -263,15 +291,13 @@
             <div class="swiper-slide">
               <div class="service-wrap">
                 <div class="service-item">
-                    <img src="./assets/images/diagnose-preg.png" alt="" class="img-fluid">
+                    <img src="./assets/images/pediatrics.avif" alt="" class="img-fluid">
   
                   <div class="service-content">
                     <div class="service-title">
-                      <h2>Laboratory Section</h2>
+                      <h2>Pediatric Services</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt aliquam vitae eum at
-                      perferendis a magni quidem est in atque aut, perspiciatis quia quam, quaerat ducimus, officiis neque
-                      natus.</p>
+                    <p>We specialize in providing exceptional care for children, from newborns to adolescents. Our pediatric team ensures your child’s growth, development, and health are nurtured through expert preventive care, immunizations, and treatment of childhood illnesses.</p>
                   </div>
                 </div>
               </div>
@@ -282,13 +308,11 @@
                 <div class="service-item">
                   <div class="service-content">
                     <div class="service-title">
-                      <h2>Laboratory Section</h2>
+                      <h2>Herbal Medicine</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt aliquam vitae eum at
-                      perferendis a magni quidem est in atque aut, perspiciatis quia quam, quaerat ducimus, officiis neque
-                      natus.</p>
+                    <p>Harnessing the power of nature, our herbal medicine services offer alternative and complementary treatments for various health conditions. We provide trusted, evidence-based herbal remedies that support holistic healing and well-being.</p>
                   </div>
-                    <img src="./assets/images/diagnose-preg.png" alt="" class="img-fluid">
+                    <img src="./assets/images/herbal.jpg" alt="" class="img-fluid">
   
                  
                 </div>
@@ -298,15 +322,13 @@
             <div class="swiper-slide">
               <div class="service-wrap">
                 <div class="service-item">
-                    <img src="./assets/images/diagnose-preg.png" alt="" class="img-fluid">
+                    <img src="./assets/images/physio.jpg" alt="" class="img-fluid">
   
                   <div class="service-content">
                     <div class="service-title">
-                      <h2>Laboratory Section</h2>
+                      <h2>Physiotherapy</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt aliquam vitae eum at
-                      perferendis a magni quidem est in atque aut, perspiciatis quia quam, quaerat ducimus, officiis neque
-                      natus.</p>
+                    <p>Our physiotherapy services are designed to help you recover, rehabilitate, and regain strength after injuries or surgeries. Whether you’re managing chronic pain or improving mobility, our physiotherapists create personalized treatment plans tailored to your needs.</p>
                   </div>
                 </div>
               </div>
@@ -320,7 +342,7 @@
 
    
       </div>
-    </div>
+    
     </div>
   </section>
 
@@ -549,29 +571,19 @@
         </div>
         <div class="blog-card d-flex">
           <div class="blog-image">
-            <img src="../assets/images/blog.png" class="img-fluid" alt="" />
+            <img src="../assets/images/blog1.jpg" class="img-fluid" alt="" />
           </div>
           <div class="blog-text">
             <div class="blog-content">
               <p>
-                Do you feel like every time you indulge in even a small amount
-                of alcohol, you sabotage your weight loss goals and wonder if
-                it’s truly possible to enjoy an alcoholic beverage and lose body
-                fat? You’re not alone. Most people, even our new clients, come
-                to us believing alcohol and weight loss are not synonymous.While
-                achieving lasting weight loss success without giving up your
-                favorite cocktails and wines may sound too good to be true, it
-                isn’t. Our clients can attest to the fact that you don’t need to
-                cut out alcohol completely to lose weight. Instead, mindful
-                drinking and clever strategies can go a long way towards
-                attaining your weight loss goals.
+                Stay informed and inspired with the latest insights, tips, and news from the world of healthcare. Our blog is designed to empower you with valuable information to make informed decisions about your health and well-being.Your immune system is your body’s natural defense against illnesses, and keeping it strong is essential for overall health.
               </p>
             </div>
             <div class="blog-info d-flex">
               <span>Admin</span>
               <span class="date d-flex">
                 <img src="../assets/images/Favorite.png" class="" alt="" />
-                <p>23/03/2024</p>
+                <p>23/03/2025</p>
               </span>
              <a href="/pages/blog.html"><button class="read-btn" type="button">Read More</button></a>
             </div>
@@ -579,7 +591,7 @@
         </div>
         <div class="blog-card d-flex">
           <div class="blog-image">
-            <img src="../assets/images/blog.png" class="img-fluid" alt="" />
+            <img src="/assets/images/blog2.jpg" class="img-fluid" alt="" />
           </div>
           <div class="blog-text">
             <div class="blog-content">
@@ -601,7 +613,7 @@
               <span>Admin</span>
               <span class="date d-flex justify-content-center">
                 <img src="../assets/images/Favorite.png" class="" alt="" />
-                <p>23/03/2024</p>
+                <p>23/03/2025</p>
               </span>
              <a href="/pages/blog.html"><button class="read-btn" type="button">Read More</button></a> 
             </div>
@@ -725,6 +737,19 @@
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <script src="./assets/js/script.js"></script>
+
+  <script>
+     // Script For Burger Nav
+     function showLogoutModal() {
+      var logoutModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      logoutModal.show();
+    }
+
+    function toggleBurgerMenu() {
+      var burgerMenuContent = document.getElementById('burgerMenuContent');
+      burgerMenuContent.classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>

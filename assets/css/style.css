@@ -59,7 +59,7 @@ body, html {
 }
 
 /* Logo Section----------- */
-.logo {
+.main-logo {
  justify-content: right;
   padding: 20px 0px;
 }
@@ -79,7 +79,7 @@ body, html {
   line-height: normal;
   letter-spacing: 0.48px;
 }
-.logo .btn {
+.main-logo .btn {
   display: flex;
   padding: 10px 22px;
   justify-content: center;
@@ -99,7 +99,7 @@ text-decoration: none;
 .logo-book a{
   text-decoration: none;
 }
-.logo .btn:hover {
+.main-logo .btn:hover {
   background: #6ae13d;
 }
 
@@ -164,7 +164,7 @@ text-decoration: none;
   position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.22);
+
    
 }
 
@@ -174,15 +174,24 @@ text-decoration: none;
   left: 0;
   width: 100%;
   height: 107%;
-  background: url("../images/hero-bg.png");
+  background: url("../images/lab.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Ensure it stays behind content */
-  transform: translateY(-45px); /* Move image up by half of its height */
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  transform: translateY(-45px); 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
+}
 .services-wrapper {
   position: relative;
   z-index: 1; /* Ensure container content is above the background */
@@ -355,6 +364,8 @@ text-decoration: none;
   margin-top: 20px; 
 }
 
+
+
 /* Our Service Section--------------- */
 
 .services .service-wrap {
@@ -434,6 +445,16 @@ text-decoration: none;
   z-index: -1;
   opacity: 20.5; 
   
+}
+.services-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
 }
 
 .services-wrapper {
@@ -525,7 +546,7 @@ text-decoration: none;
 .team {
   position: relative;
   width: 100%;
-  padding: 50px 0;
+
   color: white;
   overflow: visible;
 }
@@ -743,6 +764,7 @@ text-decoration: none;
 .blog-info a{
   text-decoration: none;
 }
+
 
 /* Buttons---------------------------- */
 .book-navs {
@@ -1034,23 +1056,34 @@ line-height: normal;
   /* top: 10%; */
   left: 0;
   width: 100%;
-  height: 97%;
-  background-image: url("../images/about-us-home.png");
+  height: 100%;
+  background-image: url("../images/about-home.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1; /* Ensure it stays behind content */
+
   transform: translateY(-45px);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
  
 }
+.about-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  z-index: 1; /* Ensure overlay stays above the image */
+}
 
 .abouts_us {
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  width: 100%; /* Ensure it takes the full width of its parent */
-  height: 100%; /* Ensure it takes the full height of its parent */
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  height: 100%; 
   
 }
 .abouts-title{
@@ -1061,7 +1094,7 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
 letter-spacing: 1.92px;
-margin-top: 350px;
+
 }
 
 .about-text h4{
@@ -1082,7 +1115,7 @@ margin-bottom: 15px;
   left: 0;
   width: 100%;
   height: 436px;
-  background-image: url("../images/about-us-home.png");
+  background-image: url("../images/about-box.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1093,7 +1126,7 @@ margin-bottom: 15px;
   width: 100%;
 height: 436px;
 /* flex-shrink: 0; */
-background: rgba(0, 0, 0, 0.46);
+background: rgba(0, 0, 0, 0.1);
 margin-top: 60px;
 margin-bottom: 20px;
 align-items: center;
@@ -1127,17 +1160,66 @@ margin-left: 42%;
   font-style: normal;
   font-weight: 500
 }
+/* General Styles */
+.about_us .abouts-us {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.about_us .about-card {
+  flex: 0 0 25%; /* Default width for larger screens */
+}
+
+.about_us .abouts-text {
+  flex: 0 0 60%; /* Default width for larger screens */
+}
+
+.about_us .accordion {
+  width: 100%; /* Full width for the accordion */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about_us .about-card {
+    display: none; /* Hide the image card */
+  }
+
+  .about_us .abouts-text {
+    flex: 0 0 100%; /* Make accordion take full width */
+  }
+}
+
+@media (max-width: 998px){
+  .abouts_us {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 95% !important; 
+    
+  }
+  .about_heading{
+    font-size: 1.4rem;
+  }
+  }
+  
 
 /* Our Services Page-------------------------------------------- */
-
+.service-home{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  height: 100%; 
+}
 .services-bg{
   position: absolute;
   /* top: 10%; */
   left: 0;
   width: 100%;
   height: 564px;
-  background-image: url("../images/services-bg.png");
+  background-image: url("../images/home\ 2.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1189,6 +1271,15 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 1.2px;
 }
+
+@media (max-width: 998px){
+ 
+  .service-box{
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-top: 60px;
+  }
+}
 /* Services Info Section-------------------- */
 
 .nav-pills .nav-link {
@@ -1209,6 +1300,13 @@ letter-spacing: 1.2px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: transparent;
 }
+.tab-imag {
+  align-items: center; 
+ 
+}
+
+
+
 
 /* Blogs Section----------------- */
 
@@ -1218,7 +1316,7 @@ letter-spacing: 1.2px;
   left: 0;
   width: 100%;
   height: 97%;
-  background-image: url("../images/garlic.png");
+  background-image: url("../images/services-home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1790,6 +1888,103 @@ transition: 0.5s;
   .header {
     display: none;
   }
+  
+}
+/* Main Burger Menu */
+.main-burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+   z-index: 1001;
+}
+
+.main-burger-menu-content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  z-index: 1000;
+  transition: left 0.7s ease-in-out;
+  overflow-y: auto;
+  padding: 20px;
+  
+}
+
+.main-burger-menu-content.show {
+  left: 0;
+}
+
+
+.main-burger-menu-content .nav-link{
+  color: #000;
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+transition: 0.5s;
+}
+
+.main-burger-menu-content .nav-link.active{
+  color: #04BC01 !important;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Ensure the burger menu is shown only on smaller screens */
+@media (max-width: 768px) {
+  .main-burger-menu {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+ 
+  .icons{
+    display: none;
+  }
+  #header-input{
+    display: none;
+  }
+  .main-logo{
+    gap: 0;
+    position: fixed;
+    z-index: 999; /* High z-index for the dashboard header, but less than burger menu */
+    width: 100%; /* Ensure it takes the full width */
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
+    background: #fff;
+
+  }
+  .logo-left{
+    margin-left: 100% !important;
+    font-size: 14px !important;
+    margin-bottom: 5px;
+  }
+  .hero{
+    
+    margin-top: 60px;
+      }
+   .logo-text{
+        font-size: 16px !important;
+        
+        margin-right: 15px;
+      }
+      .logo-left img{
+        margin-right: 5px;
+      }
+ 
+  
 }
 
 /* Logo Section--------------------- */
@@ -1838,42 +2033,17 @@ transition: 0.5s;
 /* Navbar Section--------------------------------- */
 @media (max-width: 995px) {
   .navbar {
-    width: 90vw; /* Full viewport width */
     
+    display: none;
+   
+  }
+  
+  
+
+
+
  
-    background-color: transparent; /* Remove green background */
-   
-  }
 
-  .navbar-collapse {
-    background-color: #fff; /* Background color for collapsed navbar */
-   padding: 20px 0px;
-    
-    width: 90%;
-    margin-right: 60px;
-  }
-
-  .navbar-toggler {
-    border-color: transparent; /* Remove border color from the burger icon */
-    margin-left: 85%;
-    margin-top: -160px;
-  }
-
-
-
-  .navbar-nav .nav-link {
-    color: #333; /* Text color of links when collapsed */
-    border: none; /* Remove borders from nav-links */
-    margin-right: 0; /* Reset margin for mobile */
-    text-align: right; /* Align text to left */
-   
-
-  }
-
-  .navbar-nav .nav-link.active {
-    background-color: transparent; /* Remove green background */
-    color: green; /* Active link color */
-  }
  
 }
 
@@ -1898,6 +2068,7 @@ transition: 0.5s;
 
   .hero-header {
     font-size: 1.8rem;
+    margin-top: 70%;
     
   }
 
@@ -1957,6 +2128,9 @@ transition: 0.5s;
   }
   .title h4{
     font-size: 30px;
+  }
+  .about-texts {
+    margin-left: 0;
   }
   .about-texts p{
     font-size: 16px;
@@ -2144,9 +2318,7 @@ transition: 0.5s;
 
 }
 @media (max-width: 576px){
-.abouts-us{
-  margin-top: -40px;
-}
+
 .abouts-title{
   font-size: 30px;
  
@@ -2163,9 +2335,7 @@ transition: 0.5s;
 .box-img img{
   margin-left: 33%;
 }
-.abouts-text h4{
-  font-size: 14px;
-}
+
 
 }
 
@@ -2221,10 +2391,8 @@ transition: 0.5s;
 }
 
 /* Blogs Page------------------------------- */
-@media only screen and (max-width: 1028px) {
-  .blogs-items{
-    margin-top: 100px;
-  }
+@media only screen and (max-width: 998px) {
+
   .second-crd{
     width: 220%;
     margin-left: -70px;
@@ -2241,7 +2409,14 @@ transition: 0.5s;
 }
 @media only screen and (max-width: 768px) {
   .contact-us{
-    margin-top: -70px;
+    margin-top: -20px;
+  }
+  .address-card{
+    border-radius: 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .map{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -2250,7 +2425,7 @@ transition: 0.5s;
 @media only screen and (max-width: 995px) {
   .service-text h4{
     font-size: 30px;
-    margin-top: -90PX;
+    margin-top: -160PX;
   }
   .service-text p{
     font-size: 20;
@@ -2563,11 +2738,16 @@ transition: 0.5s;
   .dashboard-header{
     gap: 0;
     position: fixed;
+    z-index: 999; /* High z-index for the dashboard header, but less than burger menu */
+    width: 100%; /* Ensure it takes the full width */
+    top: 0;
+    left: 0;
+    box-shadow: 0px 6px 12px 0px rgba(51, 108, 251, 0.16);
   }
   .content{
-    position: relative;
-    margin-top: 40px;
-    z-index: -1;
+    
+    margin-top: 60px;
+    
   }
    
   .dashboard-heading h5{
@@ -2578,6 +2758,8 @@ transition: 0.5s;
   .dashboard-heading img{
     margin-right: 5px;
   }
+ 
+  
 }
 
 /* Logout Modal------------------------ */
@@ -3115,6 +3297,14 @@ letter-spacing: 0.56px;
   font-size: 1rem;
   color: #04bc01; /* Red color for love icon */
 }
+.garlic-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3, box-shadow 0.3s; 
+}
+.garlic-img:hover{
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
 
 /* Write a blog section---------------------- */
 .write-blog-section{
@@ -3189,4 +3379,114 @@ transition: 0.5s;
   }
 }
 
-/* Trial On navar-------------------------------------- */
+/* Settings Page-------------------------------------- */
+.settings-container {
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.settings-section h2 {
+  border-bottom: 1px solid #6ae13d;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+    align-items: flex-start; /* Aligning form elements to the left */
+}
+form label.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+form label.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+form label {
+  margin-bottom: 10px;
+ 
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+}
+
+form button {
+  padding: 10px 20px;
+  background: #6ae13d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50%;
+}
+
+form button:hover {
+  background: #8bf166;
+  color: #000;
+}
+
+.exit-button{
+  padding: 10px 20px;
+  background: #6ae13d;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 50%;
+}
+.exit-button:hover{
+  background: #8bf166;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+
+  .settings-section h2{
+    font-size: 20px;
+  }
+  .settings-container {
+    width: 100%;
+    margin: auto;
+    
+    padding: 10px;
+  }
+  form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+}
+form button {
+  padding: 5px 10px;
+  background: #6ae13d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 60%;
+}
+}

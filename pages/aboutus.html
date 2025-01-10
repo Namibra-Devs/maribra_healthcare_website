@@ -32,7 +32,7 @@
               <i class="fa fa-map-marker contact-icon"></i>
               <div class="contact-text">
                 <p>Visit us</p>
-                <p>Lorem ipsum dolor sit.</p>
+                <p>MARIBRA HEALTHCARE.</p>
               </div>
             </div>
             <div class="contacts d-flex align-items-center">
@@ -72,18 +72,25 @@
     <section class="title">
       <div class="container">
         <div class="row">
-          <div class="logo d-flex">
-            <div class="logo-left d-flex align-items-center">
-              <div class="logo-img">
-                <img src="../assets/images/logo.png" class="img-fluid" alt="" />
-              </div>
-              <div class="logo-text">MARIBRA HEALTHCARE LIMITED.</div>
+          <div
+              class="dashboard-header d-flex justify-content-end align-items-center p-2"
+            >
+            <div class="dashboard-heading d-flex">
+              <img
+                src="/assets/images/logo.png"
+                alt="Company Logo"
+                class="img-fluid"
+                style="height: 40px"
+              />
+              <h5 class="">
+                MARIBRA HEALTHCARE <br />LIMITED.
+              </h5>
             </div>
             <div class="logo-book">
               <a href="/pages/appointment.html"><button class="btn" type="button">Book Appointment</button></a>
-              
+  
             </div>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -97,12 +104,13 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav align-items-center">
               <a class="nav-link" href="/index.html">Home</a>
               <a class="nav-link active" aria-current="page" href="/pages/aboutus.html">About us</a>
               <a class="nav-link" href="/pages/services.html">Our Services</a>
               <a class="nav-link" href="/pages/blog.html">Blog</a>
               <a class="nav-link"  aria-current="page" href="/pages/contact.html">Contact us</a>
+              <a class="nav-link" id="staff" href="/pages/login.html">Staff Login</a>
               
             </div>
           </div>
@@ -110,15 +118,41 @@
       </nav>
       
     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Burger Menu -->
+        <div class="main-burger-menu" onclick="toggleBurgerMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="main-burger-menu-content" id="burgerMenuContent">
+          <div class="burger-menu-header">
+            <!-- <img src="/assets/images/logo.png" alt="Company Logo" class="img-fluid" style="height: 50px" />
+            <h5 class="d-inline-block align-middle ml-2 mb-0">MARIBRA HEALTHCARE <br />LIMITED.</h5> -->
+          </div>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-3"><a href="/index.html" class="nav-link" onclick="toggleBurgerMenu()">Home</a></li>
+            <li class="nav-item mb-3"><a href="/pages/aboutus.html" class="nav-link active" onclick="toggleBurgerMenu()">About Us</a></li>
+            <li class="nav-item mb-3"><a href="/pages/services.html" class="nav-link" onclick="toggleBurgerMenu()">Our Services</a></li>
+            <li class="nav-item mb-3"><a href="/pages/blog.html" class="nav-link" onclick="toggleBurgerMenu()">Blog</a></li>
+            <li class="nav-item mb-3"><a href="/pages/contact.html" class="nav-link" onclick="toggleBurgerMenu()">Contact Us</a></li>
+            <li class="nav-item mb-3"><a href="/pages/login.html" class="nav-link" onclick="toggleBurgerMenu()">Staff Login</a></li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
 
     <!-- Hero Section with Background Image -->
     <section class="about-home">
+     
       <div class="abouts_us d-flex">
         <div class="about-bg"></div>
        
             <div class="abouts-title">ABOUT US</div>
        
       </div>
+    
     </section>
 
     <!-- About Us Section----------------------------- -->
@@ -129,7 +163,7 @@
             <div class="about-card col-md-3">
               <div class="card-img">
                 <img
-                  src="../assets/images/about-3.png"
+                  src="../assets/images/doc.jpg"
                   class="img-fluid"
                   alt=""
                 />
@@ -166,7 +200,7 @@
                     style="background: white;"
                   >
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur. Iaculis mi nunc ornare nulla cras varius egestas dignissim fusce. 
+                        To be the leading provider of innovative and accurate laboratory services, enhancing patient outcomes through exceptional quality, advanced technology and compassionate care.
                     </div>
                   </div>
                 </div>
@@ -192,8 +226,7 @@
                     style="background: white;"
                   >
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur. Iaculis mi nunc ornare nulla cras varius egestas dignissim fusce. Pretium velit risus nulla hac bibendum hendrerit tortor neque 
-                    </div>
+                        Our mission is to deliver precise and timely laboratory doagnostics to support patient care and clinical decision-making. We are committed to maintaining the highest standards of accuracy and reliability, ensuring exceptional service through continuous improvement, Professional expertise and state-of-the-art technology.</div>
                   </div>
                 </div>
                 <!-- Accordion Item 3 -->
@@ -218,7 +251,7 @@
                     style="background: white;"
                   >
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur. Iaculis mi nunc ornare nulla cras varius egestas dignissim fusce. Pretium velit risus nulla hac bibendum hendrerit tortor neque 
+                      At Maribra Healthcare Hospital, our journey began with a vision to provide accessible, compassionate, and high-quality healthcare to our community. From humble beginnings, we have grown into a trusted healthcare provider, committed to delivering excellence in patient care. With a team of dedicated professionals and state-of-the-art facilities, we continue to focus on your well-being, making health our shared priority.
                     </div>
                   </div>
                 </div>
@@ -244,7 +277,13 @@
                     style="background: white;"
                   >
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur. Iaculis mi nunc ornare nulla cras varius egestas dignissim fusce. Pretium velit risus nulla hac bibendum hendrerit tortor nequeegestas dignissim fusce. Pretium velit risus nulla hac bibendum hendrerit tortor neque 
+                      Our facilities are designed to ensure your comfort and convenience while receiving the best care possible. We offer: <br>
+
+                     - Advanced diagnostic and laboratory equipment. <br>
+                     - Modern outpatient and inpatient wards. <br>
+                     - Dedicated pediatric and physiotherapy units. <br>
+                     - A serene herbal medicine center. <br>
+                     - Fully equipped general and specialty treatment rooms.
                     </div>
                   </div>
                 </div>
@@ -469,8 +508,7 @@
                   maribra healthc@gmail.com clientservices@maribradanikom.net
                 </p>
                 <p>
-                  PLT NO. 217, Lorem ipsum dolor sit amet consectetur. Commodo
-                  quam turpis faucibus enim proin mauris eget justo. Porttitor
+                  PLT NO. 217, KUMASI
                 </p>
               </div>
             </div>
@@ -499,5 +537,18 @@
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/popper/popper.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
+
+    <script>
+      // Script For Burger Nav
+      function showLogoutModal() {
+       var logoutModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+       logoutModal.show();
+     }
+ 
+     function toggleBurgerMenu() {
+       var burgerMenuContent = document.getElementById('burgerMenuContent');
+       burgerMenuContent.classList.toggle('show');
+     }
+   </script>
   </body>
 </html>
